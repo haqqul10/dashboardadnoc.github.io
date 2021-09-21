@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.css" />
+
+    <!-- My Css -->
+    <link rel="stylesheet" href="styles/sidebarV1.css">
+
+    <!-- step -->
+    <!-- <link rel="stylesheet" href="https://design.swedbankpay.com/v/4.7.0/styles/dg-style.css" /> -->
+
+    <title>Sidebar V1</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"><img src="./images/icons/Logo.svg" alt=""></a>
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <!-- <div class="collapse navbar-collapse" id="navbarNav"> -->
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">
+                    <img src="./images/icons/Home.svg" alt="">
+                    Home
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="./images/icons/Checklist.svg" alt="">
+                    Action
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="./images/icons/Cases.svg" alt="">
+                    Cases
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="./images/icons/Profile.svg" alt="">
+                    Profile
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="./images/icons/Dashboard.svg" alt="">
+                    Dashboard
+                </a>
+            </li>
+        </ul>
+        <a href="" class="nav-link text-center profile__name">
+            <img src="./images/profile_name.svg" alt="">
+            Salem M.
+        </a>
+        <!-- </div> -->
+    </nav>
+    <!-- akhir navbar -->
+
+    <!-- navbar Home -->
+    <section class="navbar__home">
+        <div class="container-fluid">
+            <div class="container__navbar__home">
+                <div class="row d-flex align-items-lg-center">
+                    <div class="col-12 col-lg-4">
+                        <h1>Home</h1>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="input-group">
+                            <span class="input-group-text" id="basic-addon1"><img src="./images/icons/search.svg"
+                                    alt=""></span>
+                            <input type="text" class="form-control" placeholder="Search case by name or companies"
+                                aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="col12 col-lg-4 d-flex justify-content-end align-items-center">
+                        <button type="submit" class="create__button"> <img src="./images/icons/Add.svg" alt=""> create
+                            bottom</button>
+                        <img src="./images/icons/Vector.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- akhir navbar home -->
+
+    <!-- case in progress -->
+    <section class="case__in__progress">
+        <div class="container-fluid">
+            <div class="container__case__in__progress">
+                <div class="row">
+                    <div class="col-10 col-lg-11">
+                        <div class="left">
+                            <img src="./images/icons/case_in_progress.svg" alt="" class="float-start">
+                            <p class="judul__title">Case in progress</p>
+                            <p class="title">You have <span>3 pending</span> cases at the moment.</p>
+                        </div>
+                    </div>
+                    <div class="col-2 col-lg-1 d-flex justify-content-end align-items-center">
+                        <img src="./images/icons/Arrow Right.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- akhir case in progress -->
+
+    <!-- latest actions -->
+    <section class="latest__actions">
+        <div class="container-fluid">
+            <div class="container__latest__actions">
+                <div class="row">
+                    <div class="col-lg-8 col-12">
+                        <div class="latest__actions__left">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h4>Latest Actions</h4>
+                                </div>
+                                <div class="col-6 d-flex justify-content-end align-items-center">
+                                    <p>View all actions</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <ul class="StepProgress">
+                                        <li class="StepProgress-item is-done">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-3">
+                                                    <div class="left float-start">
+                                                        <strong>Progress Add</strong>
+                                                        <p>
+                                                            <img src="./images/icons/Clock.svg" alt=""> 2 days Ago
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-9">
+                                                    <div class="right">
+                                                        <p>This case requires additional communication with OnShore
+                                                            team. Waiting OnShore team confirmation</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="card">
+                                                        <div class="row">
+                                                            <div class="col-12 col-lg-6">
+                                                                <img src="./images/image_profile.svg" alt=""
+                                                                    class="img__card__profile">
+                                                                <h5>Raised for Muhammed Jamal</h5>
+                                                                <p class="title__profile">Cases on financial fraud issue
+                                                                </p>
+                                                                <a href="" class="adnoc__onshore">ADNOC Onshore</a>
+                                                            </div>
+                                                            <div class="col-12 col-lg-3 under__review">
+                                                                <a href="" class="btn btn__under__review">Under
+                                                                    Review</a>
+                                                            </div>
+                                                            <div class="col-12 col-lg-3 id__profile">
+                                                                <img src="./images/icons/Profile_card.svg" alt=""
+                                                                    class="img__profile__icon">
+                                                                <p class="by__name"><span>By</span> Jim Matthew</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="StepProgress-item is-done">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-3 pe-0">
+                                                    <div class="left float-start">
+                                                        <strong>Feedback Request</strong>
+                                                        <p>
+                                                            <img src="./images/icons/Clock.svg" alt=""> 3 days Ago
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-9">
+                                                    <div class="right">
+                                                        <p>I need your feedback on this. Kindly please review.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="card">
+                                                        <div class="row">
+                                                            <div class="col-12 col-lg-6">
+                                                                <img src="./images/image_profile.svg" alt=""
+                                                                    class=" img__card__profile">
+                                                                <h5>Raised for MIDEAST Data</h5>
+                                                                <p class="title__profile">Cases on financial fraud issue
+                                                                </p>
+                                                                <a href="" class="adnoc__onshore">ADNOC Onshore</a>
+                                                            </div>
+                                                            <div class="col-12 col-lg-3 under__review">
+                                                                <a href="" class="btn btn__under__review">Under
+                                                                    Review</a>
+                                                            </div>
+                                                            <div class="col-12 col-lg-3 id__profile">
+                                                                <img src="./images/icons/Profile_card.svg" alt=""
+                                                                    class="img__profile__icon">
+                                                                <p class="by__name"><span>By</span> Jim Matthew</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!-- <li class="StepProgress-item current"><strong>Post a contest</strong></li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <div class="latest__actions__right">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h4>Latest Actions <img src="./images/icons/help.svg" alt=""> </h4>
+                                </div>
+                                <div class="col-6 d-flex justify-content-end align-items-center">
+                                    <p>View all actions</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div>
+                                        <div id="myChart"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col d-flex justify-content-evenly">
+                                    <div class="box_1 float-start"></div>
+                                    <div class="colom ">
+                                        <h6 class="nilai__chart">36</h6>
+                                        <p class="title__chart">Open case</p>
+                                    </div>
+                                </div>
+                                <div class="col d-flex justify-content-evenly">
+                                    <div class="box_2 float-start"></div>
+                                    <div class="colom">
+                                        <h6 class="nilai__chart">14</h6>
+                                        <p class="title__chart">Closed case</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col d-flex justify-content-evenly">
+                                    <div class="box_3 float-start"></div>
+                                    <div class="colom ">
+                                        <h6 class="nilai__chart">12</h6>
+                                        <p class="title__chart">Pending &nbsp; &nbsp;</p>
+                                    </div>
+                                </div>
+                                <div class="col d-flex justify-content-evenly">
+                                    <div class="box_4 float-start"></div>
+                                    <div class="colom">
+                                        <h6 class="nilai__chart">22</h6>
+                                        <p class="title__chart">Submitted</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- akhir latest actions -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="libraries/jquery/jquery-3.4.1.min.js"></script>
+    <script src="libraries/jquery/popper.min.js"></script>
+    <script src="libraries/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <!-- <script src="libraries/jquery/chart.min.js"></script> -->
+
+    <script>
+        var options = {
+            series: [60, 4, 16, 20],
+            chart: {
+                type: 'donut',
+                width: '350px',
+            },
+            stroke: {
+                colors: ['none']
+            },
+            dataLabels: {
+                enabled: true,
+                formatter: function (val) {
+                    return val + "%"
+                },
+                style: {
+                    fontSize: '14px',
+                    fontWeight: '500',
+                },
+                dropShadow: {
+                    enabled: false
+                },
+            },
+            fill: {
+                colors: ['#1553A0', '#53A8E2', '#76DDFB', '#DBECF8']
+            },
+            legend: {
+                show: false
+            },
+            responsive: [{
+                breakpoint: 480,
+                options: {
+                    chart: {
+                        width: 300
+                    },
+                    legend: {
+                        show: false
+                    }
+                }
+            }],
+            tooltip: {
+                enabled: false,
+            },
+            plotOptions: {
+                pie: {
+                    startAngle: 0,
+                    endAngle: 360,
+                    expandOnClick: true,
+                    offsetX: 0,
+                    offsetY: 0,
+                    customScale: 1,
+                    donut: {
+                        size: '58%',
+                        background: 'transparent',
+                        labels: {
+                            show: true,
+
+                            value: {
+                                show: true,
+                                fontSize: '45px',
+                                fontFamily: 'Helvetica, Arial, sans-serif',
+                                fontWeight: 600,
+                                color: '#4A4A4A',
+                                offsetY: 16,
+                                formatter: function (val) {
+                                    return val
+                                }
+                            },
+                            name: {
+                                show: true,
+                                fontSize: '12px',
+                                fontFamily: 'Helvetica, Arial, sans-serif',
+                                fontWeight: 600,
+                                color: 'black',
+                                offsetY: -10,
+                                formatter: function (val) {
+                                    return val
+                                }
+                            },
+                            total: {
+                                show: true,
+                                showAlways: true,
+                                label: 'Total cases',
+                                fontSize: '14px',
+                                fontFamily: 'Inter, Arial, sans-serif',
+                                fontWeight: 500,
+                                color: '#888888',
+                                formatter: function (w) {
+                                    return w.globals.seriesTotals.reduce((a, b) => {
+                                        return a + b
+                                    }, 0)
+                                }
+                            }
+                        }
+                    },
+                }
+            }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#myChart"), options);
+        chart.render();
+    </script>
+
+</body>
+
+</html>
