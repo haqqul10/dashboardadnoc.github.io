@@ -12,6 +12,8 @@
     <!-- My Css -->
     <link rel="stylesheet" href="styles/bawabtinavigationv1.css">
 
+    <link rel="stylesheet" href="libraries/jquery/dropify.css">
+
     <!-- step -->
     <!-- <link rel="stylesheet" href="https://design.swedbankpay.com/v/4.7.0/styles/dg-style.css" /> -->
 
@@ -138,8 +140,61 @@
                             <h5 class="title__virus">Covid-19</h5>
                         </div>
                         <div class="col-12 col-sm-6 col-lg-6 d-flex justify-content-end align-items-center">
-                            <a href="" class="update__covid">Update Covid Results</a>
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal" href=""
+                                class="update__covid">Update Covid Results</a>
                             <a href="" class="view__covid">View Covid Results</a>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Create New Covid Result</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="mb-3">
+                                                    <label for="exampleFormControlInput1" class="form-label">
+                                                        Result Date</label>
+                                                    <input type="date" class="form-control"
+                                                        id="exampleFormControlInput1" placeholder="01/12/2021">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="card" class="form-label">
+                                                        Test Result</label>
+                                                    <div class="card">
+                                                        <div class="ellipe_active">
+                                                            <div class="box_1"></div>
+                                                            <p>Negative</p>
+                                                        </div>
+                                                        <div class="ellipe_danger">
+                                                            <div class="box_2"></div>
+                                                            <p>Positive</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="exampleFormControlTextarea1" class="form-label">
+                                                        Remarks</label>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                        rows="6" placeholder="Write results details"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <input name="file2" type="file" class="dropify" data-height="300"
+                                                    data-max-file-size="2K" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a class="btn btn__create__result">Create Results</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- akhir title content -->
@@ -502,14 +557,14 @@
     <script src="libraries/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="libraries/jquery/jquery-3.4.1.min.js"></script>
     <!-- <script src="libraries/jquery/popper.min.js"></script> -->
-    <!-- <script src="libraries/bootstrap/js/bootstrap.min.js"></script> -->
+    <script src="libraries/bootstrap/js/bootstrap.min.js"></script>
+    <script src="libraries/jquery/dropify.min.js"></script>
     <script>
         $("#accordion").on('shown.bs.collapse', function () {
             var btnCollapse = $(e.relatedTarget);
             $('.collapse').collapse('hide')
         });
-
-        
+        $('.dropify').dropify();
     </script>
 </body>
 

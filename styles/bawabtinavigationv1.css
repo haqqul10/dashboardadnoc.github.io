@@ -233,6 +233,222 @@ body .container-fluid {
   border: 1.5px solid #1553A0;
 }
 
+.profile__card .container-fluid .title-content .modal-content {
+  padding: 24px;
+  width: 1118px;
+  background: #FFFFFF;
+  border: 1px solid #F9F9F9;
+  border-radius: 5px;
+}
+
+.profile__card .container-fluid .title-content .modal-content .modal-header {
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 26px;
+}
+
+.profile__card .container-fluid .title-content .modal-content .modal-header .modal-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 120%;
+  color: #4A4A4A;
+}
+
+.profile__card .container-fluid .title-content .modal-content .modal-body {
+  padding-top: 24px;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.profile__card .container-fluid .title-content .modal-content .modal-body label {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 160%;
+  color: #4A4A4A;
+}
+
+.profile__card .container-fluid .title-content .modal-content .modal-body input::-webkit-input-placeholder {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+  color: #4A4A4A;
+}
+
+.profile__card .container-fluid .title-content .modal-content .modal-body input:-ms-input-placeholder {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+  color: #4A4A4A;
+}
+
+.profile__card .container-fluid .title-content .modal-content .modal-body input::-ms-input-placeholder {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+  color: #4A4A4A;
+}
+
+.profile__card .container-fluid .title-content .modal-content .modal-body input::placeholder {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+  color: #4A4A4A;
+}
+
+.profile__card .container-fluid .title-content .modal-content .modal-body textarea {
+  resize: none;
+}
+
+.profile__card .container-fluid .title-content .modal-content .modal-body textarea::-webkit-input-placeholder {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+  color: #CACACA;
+}
+
+.profile__card .container-fluid .title-content .modal-content .modal-body textarea:-ms-input-placeholder {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+  color: #CACACA;
+}
+
+.profile__card .container-fluid .title-content .modal-content .modal-body textarea::-ms-input-placeholder {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+  color: #CACACA;
+}
+
+.profile__card .container-fluid .title-content .modal-content .modal-body textarea::placeholder {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+  color: #CACACA;
+}
+
+.profile__card .container-fluid .title-content .modal-content .modal-body .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: none;
+}
+
+.profile__card .container-fluid .title-content .modal-content .modal-body .card .ellipe_active {
+  background-color: #D0F7E5;
+  width: 260px;
+  height: 46px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #37B24D;
+  border-radius: 5px 0px 0px 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-right: none;
+}
+
+.profile__card .container-fluid .title-content .modal-content .modal-body .card .ellipe_active .box_1 {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #5FD7A5;
+  vertical-align: middle;
+  margin-right: 13px;
+}
+
+.profile__card .container-fluid .title-content .modal-content .modal-body .card .ellipe_active p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+  color: #4A4A4A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+.profile__card .container-fluid .title-content .modal-content .modal-body .card .ellipe_danger {
+  background: #FFFFFF;
+  border: 1px solid #CACACA;
+  width: 260px;
+  height: 46px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 0px 5px 5px 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profile__card .container-fluid .title-content .modal-content .modal-body .card .ellipe_danger .box_2 {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #D94C4B;
+  vertical-align: middle;
+  margin-right: 13px;
+}
+
+.profile__card .container-fluid .title-content .modal-content .modal-body .card .ellipe_danger p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+  color: #4A4A4A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+.profile__card .container-fluid .title-content .modal-content .modal-footer {
+  border: none;
+}
+
+.profile__card .container-fluid .title-content .modal-content .modal-footer .btn__create__result {
+  width: 140px;
+  height: 36px;
+  background: #1553A0;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 160%;
+  color: #FFFFFF;
+}
+
 .profile__card .container-fluid .card__content .card__data.active__success {
   background: #D0F7E5;
   border: 1px solid #37B24D;

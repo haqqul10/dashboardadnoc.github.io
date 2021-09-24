@@ -240,6 +240,151 @@ body {
                 text-decoration: none;
                 border: 1.5px solid #1553A0;
             }
+
+            .modal-content {
+                padding: 24px;
+                width: 1118px;
+                background: #FFFFFF;
+                border: 1px solid #F9F9F9;
+                border-radius: 5px;
+
+                .modal-header {
+                    padding-top: 0;
+                    padding-left: 0;
+                    padding-right: 0;
+                    padding-bottom: 26px;
+
+                    .modal-title {
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 25px;
+                        line-height: 120%;
+                        color: #4A4A4A;
+                    }
+                }
+
+                .modal-body {
+                    padding-top: 24px;
+                    padding-bottom: 0;
+                    padding-left: 0;
+                    padding-right: 0;
+
+                    label {
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 160%;
+                        color: #4A4A4A;
+                    }
+
+                    input {
+                        &::placeholder {
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 160%;
+                            color: #4A4A4A;
+                        }
+                    }
+
+                    textarea {
+                        resize: none;
+
+                        &::placeholder {
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 160%;
+                            color: #CACACA;
+                        }
+                    }
+
+                    .card {
+                        display: flex;
+                        flex-direction: row;
+                        border: none;
+
+                        .ellipe_active {
+                            background-color: #D0F7E5;
+                            width: 260px;
+                            height: 46px;
+                            display: flex;
+                            border: 1px solid #37B24D;
+                            border-radius: 5px 0px 0px 5px;
+                            align-items: center;
+                            justify-content: center;
+                            border-right: none;
+
+                            .box_1 {
+                                width: 8px;
+                                height: 8px;
+                                border-radius: 50%;
+                                background-color: #5FD7A5;
+                                vertical-align: middle;
+                                margin-right: 13px;
+                            }
+
+                            p {
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 14px;
+                                line-height: 160%;
+                                color: #4A4A4A;
+                                display: flex;
+                                align-items: center;
+                                margin: 0;
+                            }
+                        }
+
+                        .ellipe_danger {
+                            background: #FFFFFF;
+                            border: 1px solid #CACACA;
+                            width: 260px;
+                            height: 46px;
+                            display: flex;
+                            border-radius: 0px 5px 5px 0px;
+                            align-items: center;
+                            justify-content: center;
+
+                            .box_2 {
+                                width: 8px;
+                                height: 8px;
+                                border-radius: 50%;
+                                background-color: #D94C4B;
+                                vertical-align: middle;
+                                margin-right: 13px;
+                            }
+
+                            p {
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 14px;
+                                line-height: 160%;
+                                color: #4A4A4A;
+                                display: flex;
+                                align-items: center;
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+
+                .modal-footer {
+                    border: none;
+
+                    .btn__create__result {
+                        width: 140px;
+                        height: 36px;
+                        background: #1553A0;
+                        border-radius: 5px;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 160%;
+                        color: #FFFFFF;
+                    }
+                }
+            }
         }
 
         // card content
