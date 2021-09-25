@@ -433,8 +433,156 @@ body .container-fluid {
   margin: 0;
 }
 
+.profile__card .container-fluid .title-content .modal-content .modal-body html {
+  background-color: #1a1a1a;
+  overflow: hidden;
+}
+
+.profile__card .container-fluid .title-content .modal-content .modal-body .middle .label {
+  width: 100%;
+}
+
+.profile__card .container-fluid .title-content .modal-content .modal-body .middle .label .box.box_1 {
+  border-right: none;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.profile__card .container-fluid .title-content .modal-content .modal-body .middle .label .box.box_2 {
+  border-left: none;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.profile__card .container-fluid .title-content .modal-content .modal-body .middle .label .box {
+  height: 46px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #CACACA;
+}
+
+.profile__card .container-fluid .title-content .modal-content .modal-body .middle .label .box input[type="radio"] {
+  display: none;
+}
+
+.profile__card .container-fluid .title-content .modal-content .modal-body .middle .label .box input[type="radio"]:checked {
+  width: 100%;
+}
+
+.profile__card .container-fluid .title-content .modal-content .modal-body .middle .label .box input[type="radio"]:checked + .box_success {
+  background: #D0F7E5;
+  border: 1px solid #37B24D;
+  border-radius: 5px 0px 0px 5px;
+  height: 46px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.profile__card .container-fluid .title-content .modal-content .modal-body .middle .label .box input[type="radio"]:checked + .box_danger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 46px;
+  background: #FFDCDD;
+  border: 1px solid #D94C4B;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.profile__card .container-fluid .title-content .modal-content .modal-body .middle .label .box img {
+  margin-right: 13px;
+}
+
+.profile__card .container-fluid .title-content .modal-content .modal-body .middle .label .box span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+  color: #4A4A4A;
+}
+
+.profile__card .container-fluid .title-content .modal-content .modal-body .upload__file {
+  height: 337px;
+  width: 100%;
+  border: 1px dashed #CACACA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.profile__card .container-fluid .title-content .modal-content .modal-body .upload__file .bungkus__data {
+  position: absolute;
+}
+
+.profile__card .container-fluid .title-content .modal-content .modal-body .upload__file .bungkus__data .data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile__card .container-fluid .title-content .modal-content .modal-body .upload__file .bungkus__data .data .title__header {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+  text-align: center;
+  color: #CACACA;
+  margin: 0;
+  padding-top: 8px;
+}
+
+.profile__card .container-fluid .title-content .modal-content .modal-body .upload__file .bungkus__data .data .title__header .title__text {
+  color: #1553A0;
+}
+
+.profile__card .container-fluid .title-content .modal-content .modal-body .upload__file .file__upload {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+
 .profile__card .container-fluid .title-content .modal-content .modal-footer {
   border: none;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-top: 24px;
 }
 
 .profile__card .container-fluid .title-content .modal-content .modal-footer .btn__create__result {
@@ -447,6 +595,7 @@ body .container-fluid {
   font-size: 14px;
   line-height: 160%;
   color: #FFFFFF;
+  margin: 0;
 }
 
 .profile__card .container-fluid .card__content .card__data.active__success {

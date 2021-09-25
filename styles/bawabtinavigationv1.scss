@@ -367,10 +367,134 @@ body {
                             }
                         }
                     }
+
+                    html {
+                        background-color: #1a1a1a;
+                        overflow: hidden;
+                    }
+
+                    .middle {
+
+                        .label {
+                            width: 100%;
+
+                            .box.box_1 {
+                                border-right: none;
+                                border-bottom-left-radius: 5px;
+                                border-top-left-radius: 5px;
+                            }
+
+                            .box.box_2 {
+                                border-left: none;
+                                border-bottom-right-radius: 5px;
+                                border-top-right-radius: 5px;
+                            }
+
+                            .box {
+                                height: 46px;
+                                background-color: white;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border: 1px solid #CACACA;
+
+
+                                input[type="radio"] {
+                                    display: none;
+
+                                    &:checked {
+                                        width: 100%;
+
+                                        +.box_success {
+                                            background: #D0F7E5;
+                                            border: 1px solid #37B24D;
+                                            border-radius: 5px 0px 0px 5px;
+                                            height: 46px;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            width: 100%;
+                                        }
+
+                                        +.box_danger {
+                                            display: flex;
+                                            justify-content: center;
+                                            width: 100%;
+                                            align-items: center;
+                                            height: 46px;
+                                            background: #FFDCDD;
+                                            border: 1px solid #D94C4B;
+                                            border-radius: 0px 5px 5px 0px;
+                                        }
+                                    }
+                                }
+
+                                img {
+                                    margin-right: 13px;
+                                }
+
+                                span {
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 14px;
+                                    line-height: 160%;
+                                    color: #4A4A4A;
+                                }
+                            }
+                        }
+
+                    }
+
+                    .upload__file {
+                        height: 337px;
+                        width: 100%;
+                        border: 1px dashed #CACACA;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+
+                        .bungkus__data {
+                            position: absolute;
+
+                            .data {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+
+                                .title__header {
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 14px;
+                                    line-height: 160%;
+                                    text-align: center;
+                                    color: #CACACA;
+                                    margin: 0;
+                                    padding-top: 8px;
+
+                                    .title__text {
+                                        color: #1553A0;
+                                    }
+
+                                }
+
+                            }
+                        }
+
+                        .file__upload {
+                            height: 100%;
+                            width: 100%;
+                            opacity: 0;
+                        }
+                    }
                 }
 
                 .modal-footer {
                     border: none;
+                    padding-left: 0;
+                    padding-right: 0;
+                    padding-bottom: 0;
+                    padding-top: 24px;
 
                     .btn__create__result {
                         width: 140px;
@@ -382,6 +506,7 @@ body {
                         font-size: 14px;
                         line-height: 160%;
                         color: #FFFFFF;
+                        margin: 0;
                     }
                 }
             }

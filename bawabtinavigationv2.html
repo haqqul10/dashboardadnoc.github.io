@@ -10,23 +10,17 @@
     <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.css" />
 
     <!-- My Css -->
-    <link rel="stylesheet" href="styles/bawabtinavigationv1.css">
-
-    <link rel="stylesheet" href="libraries/jquery/dropify.css">
-
-    <!-- step -->
-    <!-- <link rel="stylesheet" href="https://design.swedbankpay.com/v/4.7.0/styles/dg-style.css" /> -->
+    <link rel="stylesheet" href="styles/bawabtinavigationv1.css" />
 
     <title>Navigation</title>
 </head>
 
 <body>
-
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand dekstop" href="#"><img src="./images/icons/Bwabti.svg" class="" alt=""></a>
-            <a class="navbar-brand mobile" href="#"><img src="./images/icons/Logo_navigation.svg" class="" alt=""></a>
+            <a class="navbar-brand dekstop" href="#"><img src="./images/icons/Bwabti.svg" class="" alt="" /></a>
+            <a class="navbar-brand mobile" href="#"><img src="./images/icons/Logo_navigation.svg" class="" alt="" /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <!-- <span class="navbar-toggler-icon"></span> -->
@@ -47,7 +41,9 @@
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                             <li><a class="dropdown-item" href="#">Action</a></li>
                             <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -58,12 +54,14 @@
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                             <li><a class="dropdown-item" href="#">Action</a></li>
                             <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
                         </ul>
                     </li>
                 </ul>
                 <p>Welcome, Safeer Nakkolakkal</p>
-                <img src="./images/icons/Vector.svg" alt="">
+                <img src="./images/icons/Vector.svg" alt="" />
             </div>
         </div>
     </nav>
@@ -74,13 +72,13 @@
             <div class="row">
                 <div class="col-12 col-md-12 col-lg-3">
                     <div class="card card__data__profile">
-                        <img src="./images/icons_2/profile_card.svg" alt="">
+                        <img src="./images/icons_2/profile_card.svg" alt="" />
                         <div class="card-body">
                             <h5 class="card-title">Muhammed Jamal</h5>
                             <p class="card-text">Senior Analyst, IT Applications</p>
                             <p class="card-link">ADNOC Onshore</p>
                             <a href="#" class="btn btn__active__employee">ACTIVE EMPLOYEE</a>
-                            <hr class="hr__color">
+                            <hr class="hr__color" />
                         </div>
                         <div class="card-footer">
                             <div class="row">
@@ -132,14 +130,18 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-12 col-lg-9">
-
                     <!-- title content -->
                     <div class="row d-flex justify-content-between title-content">
                         <div class="col-12 col-sm-6 col-lg-6 d-flex align-items-center">
-                            <img src="./images/icons_2/Virus.svg" alt="" class="float-start img__virus">
+                            <img src="./images/icons_2/Virus.svg" alt="" class="float-start img__virus" />
                             <h5 class="title__virus">Covid-19</h5>
                         </div>
-                        <div class="col-12 col-sm-6 col-lg-6 d-flex justify-content-end align-items-center">
+                        <div class="
+                  col-12 col-sm-6 col-lg-6
+                  d-flex
+                  justify-content-end
+                  align-items-center
+                ">
                             <a data-bs-toggle="modal" data-bs-target="#exampleModal" href=""
                                 class="update__covid">Update Covid Results</a>
                             <a href="" class="view__covid">View Covid Results</a>
@@ -150,43 +152,75 @@
                             <div class="modal-dialog modal-dialog-centered modal-xl">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Create New Covid Result</h5>
+                                        <h5 class="modal-title" id="exampleModalLabel">
+                                            Create New Covid Result
+                                        </h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
                                         <div class="row">
-                                            <div class="col-6">
+                                            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                                                 <div class="mb-3">
                                                     <label for="exampleFormControlInput1" class="form-label">
                                                         Result Date</label>
-                                                    <input type="date" class="form-control"
-                                                        id="exampleFormControlInput1" placeholder="01/12/2021">
+                                                    <input id="mydate" type="text" class="form-control"
+                                                        id="exampleFormControlInput1" placeholder="01/12/2021" />
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label for="card" class="form-label">
-                                                        Test Result</label>
-                                                    <div class="card">
-                                                        <div class="ellipe_active">
-                                                            <div class="box_1"></div>
-                                                            <p>Negative</p>
-                                                        </div>
-                                                        <div class="ellipe_danger">
-                                                            <div class="box_2"></div>
-                                                            <p>Positive</p>
+                                                    <label for="card" class="form-label">Test Result</label>
+                                                    <div class="middle">
+                                                        <div class="row">
+                                                            <div class="col-6 pe-0">
+                                                                <label class="label">
+                                                                    <div class="box box_1">
+                                                                        <input type="radio" name="radio" checked />
+                                                                        <div class="box_success">
+                                                                            <img src="./images/icons_2/Ellipse_green.svg"
+                                                                                alt="" />
+                                                                            <span>Negative</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </label>
+                                                            </div>
+                                                            <div class="col-6 ps-0">
+                                                                <label class="label">
+                                                                    <div class="box box_2">
+                                                                        <input type="radio" name="radio" />
+                                                                        <div class="box_danger">
+                                                                            <img src="./images/icons_2/Ellipse_red.svg"
+                                                                                alt="" />
+                                                                            <span>Positive</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </label>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="mb-3">
+                                                <div class="">
                                                     <label for="exampleFormControlTextarea1" class="form-label">
                                                         Remarks</label>
                                                     <textarea class="form-control" id="exampleFormControlTextarea1"
                                                         rows="6" placeholder="Write results details"></textarea>
                                                 </div>
                                             </div>
-                                            <div class="col-6">
-                                                <input name="file2" type="file" class="dropify" data-height="300"
-                                                    data-max-file-size="2K" />
+                                            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                                <label for="exampleFormControlTextarea1" class="form-label">Attach
+                                                    files</label>
+                                                <div class="upload__file">
+                                                    <div class="bungkus__data">
+                                                        <div class="data">
+                                                            <img src="./images/icons_2/upload_file.svg" alt="" />
+                                                            <p class="title__header">
+                                                                <span class="title__text">Select File</span>
+                                                                or Drag and <br />
+                                                                Drop files here
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <input type="file" class="file__upload" name="" />
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -199,14 +233,13 @@
                     </div>
                     <!-- akhir title content -->
 
-
                     <!-- card content -->
                     <div class="row card__content">
                         <div class="col-12 col-md-6 col-lg-3 one__card">
                             <div class="card card__data">
                                 <div class="row">
                                     <div class="col d-flex justify-content-end">
-                                        <img src="./images/icons_2/Building.svg" alt="">
+                                        <img src="./images/icons_2/Building.svg" alt="" />
                                     </div>
                                 </div>
                                 <div class="row pt-3">
@@ -221,10 +254,10 @@
                             <div class="card card__data active__success">
                                 <div class="row">
                                     <div class="col">
-                                        <img src="./images/icons_2/Group 531.svg" alt="">
+                                        <img src="./images/icons_2/Group 531.svg" alt="" />
                                     </div>
                                     <div class="col d-flex justify-content-end">
-                                        <img src="./images/icons_2/Test.svg" alt="">
+                                        <img src="./images/icons_2/Test.svg" alt="" />
                                     </div>
                                 </div>
                                 <div class="row pt-3">
@@ -239,7 +272,7 @@
                             <div class="card card__data">
                                 <div class="row">
                                     <div class="col d-flex justify-content-end">
-                                        <img src="./images/icons_2/Vaccine.svg" alt="">
+                                        <img src="./images/icons_2/Vaccine.svg" alt="" />
                                     </div>
                                 </div>
                                 <div class="row pt-3">
@@ -254,16 +287,18 @@
                             <div class="card card__data active__danger">
                                 <div class="row">
                                     <div class="col">
-                                        <img src="./images/icons_2/Warning.svg" alt="">
+                                        <img src="./images/icons_2/Warning.svg" alt="" />
                                     </div>
                                     <div class="col d-flex justify-content-end">
-                                        <img src="./images/icons_2/Test_red.svg" alt="">
+                                        <img src="./images/icons_2/Test_red.svg" alt="" />
                                     </div>
                                 </div>
                                 <div class="row pt-3">
                                     <div class="col">
                                         <p class="card__data__title">Acces Status</p>
-                                        <h5 class="card__data__header">Blocked (Covid test needed)</h5>
+                                        <h5 class="card__data__header">
+                                            Blocked (Covid test needed)
+                                        </h5>
                                     </div>
                                 </div>
                             </div>
@@ -278,11 +313,13 @@
                                 <div class="row">
                                     <div class="col d-flex align-items-center">
                                         <img src="./images/icons_2/File.svg" alt=""
-                                            class="img__administrative__actions">
-                                        <h5 class="title__administrative__actions">Administrative Actions</h5>
+                                            class="img__administrative__actions" />
+                                        <h5 class="title__administrative__actions">
+                                            Administrative Actions
+                                        </h5>
                                     </div>
                                 </div>
-                                <div class="row" style="max-height: 492px; overflow-y: auto;">
+                                <div class="row" style="max-height: 492px; overflow-y: auto">
                                     <div class="col">
                                         <div class="accordion" id="accordionExample">
                                             <div class="accordion-item">
@@ -290,15 +327,17 @@
                                                     <button class="accordion-button collapsed" type="button"
                                                         data-bs-toggle="collapse" data-bs-target="#collapseOne"
                                                         aria-expanded="true" aria-controls="collapseOne">
-                                                        <img src="./images/icons_2/Virus.svg" alt=""> Update Covid
-                                                        Results
+                                                        <img src="./images/icons_2/Virus.svg" alt="" />
+                                                        Update Covid Results
                                                     </button>
                                                 </h2>
                                                 <div id="collapseOne" class="accordion-collapse collapse"
                                                     aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                                     <div class="accordion-body">
-                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                            Recusandae, tempora!</p>
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet consectetur
+                                                            adipisicing elit. Recusandae, tempora!
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -309,15 +348,17 @@
                                                     <button class="accordion-button collapsed" type="button"
                                                         data-bs-toggle="collapse" data-bs-target="#collapse2"
                                                         aria-expanded="true" aria-controls="collapseOne">
-                                                        <img src="./images/icons_2/Virus.svg" alt=""> Return to Office
-                                                        2021
+                                                        <img src="./images/icons_2/Virus.svg" alt="" />
+                                                        Return to Office 2021
                                                     </button>
                                                 </h2>
                                                 <div id="collapse2" class="accordion-collapse collapse"
                                                     aria-labelledby="headingOne" data-bs-parent="#accordionExample2">
                                                     <div class="accordion-body">
-                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                            Recusandae, tempora!</p>
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet consectetur
+                                                            adipisicing elit. Recusandae, tempora!
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -328,15 +369,17 @@
                                                     <button class="accordion-button collapsed" type="button"
                                                         data-bs-toggle="collapse" data-bs-target="#collapse3"
                                                         aria-expanded="true" aria-controls="collapseOne">
-                                                        <img src="./images/icons_2/Virus.svg" alt=""> Essentials - Non
-                                                        Essentials Field Staff
+                                                        <img src="./images/icons_2/Virus.svg" alt="" />
+                                                        Essentials - Non Essentials Field Staff
                                                     </button>
                                                 </h2>
                                                 <div id="collapse3" class="accordion-collapse collapse"
                                                     aria-labelledby="headingOne" data-bs-parent="#accordionExample3">
                                                     <div class="accordion-body">
-                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                            Recusandae, tempora!</p>
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet consectetur
+                                                            adipisicing elit. Recusandae, tempora!
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -347,15 +390,17 @@
                                                     <button class="accordion-button collapsed" type="button"
                                                         data-bs-toggle="collapse" data-bs-target="#collapse4"
                                                         aria-expanded="true" aria-controls="collapseOne">
-                                                        <img src="./images/icons_2/Virus.svg" alt=""> Manage Employee
-                                                        Card
+                                                        <img src="./images/icons_2/Virus.svg" alt="" />
+                                                        Manage Employee Card
                                                     </button>
                                                 </h2>
                                                 <div id="collapse4" class="accordion-collapse collapse"
                                                     aria-labelledby="headingOne" data-bs-parent="#accordionExample4">
                                                     <div class="accordion-body">
-                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                            Recusandae, tempora!</p>
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet consectetur
+                                                            adipisicing elit. Recusandae, tempora!
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -366,15 +411,17 @@
                                                     <button class="accordion-button collapsed" type="button"
                                                         data-bs-toggle="collapse" data-bs-target="#collapse5"
                                                         aria-expanded="true" aria-controls="collapseOne">
-                                                        <img src="./images/icons_2/Virus.svg" alt=""> Manage Employee
-                                                        Vaccination
+                                                        <img src="./images/icons_2/Virus.svg" alt="" />
+                                                        Manage Employee Vaccination
                                                     </button>
                                                 </h2>
                                                 <div id="collapse5" class="accordion-collapse collapse"
                                                     aria-labelledby="headingOne" data-bs-parent="#accordionExample5">
                                                     <div class="accordion-body">
-                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                            Recusandae, tempora!</p>
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet consectetur
+                                                            adipisicing elit. Recusandae, tempora!
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -385,15 +432,17 @@
                                                     <button class="accordion-button collapsed" type="button"
                                                         data-bs-toggle="collapse" data-bs-target="#collapse6"
                                                         aria-expanded="true" aria-controls="collapseOne">
-                                                        <img src="./images/icons_2/Virus.svg" alt=""> Review Covid
-                                                        Results
+                                                        <img src="./images/icons_2/Virus.svg" alt="" />
+                                                        Review Covid Results
                                                     </button>
                                                 </h2>
                                                 <div id="collapse6" class="accordion-collapse collapse"
                                                     aria-labelledby="headingOne" data-bs-parent="#accordionExample6">
                                                     <div class="accordion-body">
-                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                            Recusandae, tempora!</p>
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet consectetur
+                                                            adipisicing elit. Recusandae, tempora!
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -408,21 +457,23 @@
                                     <div class="card card__approval">
                                         <div class="row">
                                             <div class="col d-flex align-items-center">
-                                                <img src="./images/icons_2/Eye.svg" alt="" class="img__approval">
+                                                <img src="./images/icons_2/Eye.svg" alt="" class="img__approval" />
                                                 <h5 class="title__approval">Approval</h5>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-12 col-sm-6 col-md-6 col-lg-6">
                                                 <div class="card card__data__approval">
-                                                    <img src="./images/icons_2/Virus.svg" alt="" class="img__approval">
+                                                    <img src="./images/icons_2/Virus.svg" alt=""
+                                                        class="img__approval" />
                                                     <p class="title__approval">Restricted Reader</p>
                                                     <p class="text__approval">Access Requests</p>
                                                 </div>
                                             </div>
                                             <div class="col-12 col-sm-6 col-md-6 col-lg-6">
                                                 <div class="card card__data__approval">
-                                                    <img src="./images/icons_2/Virus.svg" alt="" class="img__approval">
+                                                    <img src="./images/icons_2/Virus.svg" alt=""
+                                                        class="img__approval" />
                                                     <p class="title__approval">Restricted Reader</p>
                                                     <p class="text__approval">Access Requests</p>
                                                 </div>
@@ -436,20 +487,24 @@
                                     <div class="card card__requests">
                                         <div class="row">
                                             <div class="col d-flex align-items-center">
-                                                <img src="./images/icons_2/Lock.svg" alt="" class="img__requests">
+                                                <img src="./images/icons_2/Lock.svg" alt="" class="img__requests" />
                                                 <h5 class="title__requests">Requests</h5>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-12 col-sm-6 col-md-6 col-lg-6">
                                                 <div class="card card__data__requests">
-                                                    <img src="./images/icons_2/Virus.svg" alt="" class="img__requests">
-                                                    <p class="title__requests">Restricted Reader Access</p>
+                                                    <img src="./images/icons_2/Virus.svg" alt=""
+                                                        class="img__requests" />
+                                                    <p class="title__requests">
+                                                        Restricted Reader Access
+                                                    </p>
                                                 </div>
                                             </div>
                                             <div class="col-12 col-sm-6 col-md-6 col-lg-6">
                                                 <div class="card card__data__requests">
-                                                    <img src="./images/icons_2/Virus.svg" alt="" class="img__requests">
+                                                    <img src="./images/icons_2/Virus.svg" alt=""
+                                                        class="img__requests" />
                                                     <p class="title__requests">Bawabti Admin Access</p>
                                                 </div>
                                             </div>
@@ -462,26 +517,28 @@
                                     <div class="card card__other">
                                         <div class="row">
                                             <div class="col d-flex align-items-center">
-                                                <img src="./images/icons_2/Grid.svg" alt="" class="img__title__other">
+                                                <img src="./images/icons_2/Grid.svg" alt="" class="img__title__other" />
                                                 <h5 class="title__other">Other Apps</h5>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-12 col-sm-4 col-md-4 col-lg-4">
                                                 <div class="card card__data__other">
-                                                    <img src="./images/icons_2/Virus.svg" alt="" class="img__other">
+                                                    <img src="./images/icons_2/Virus.svg" alt="" class="img__other" />
                                                     <p class="title__other">Vehicle Permit System</p>
                                                 </div>
                                             </div>
                                             <div class="col-12 col-sm-4 col-md-4 col-lg-4">
                                                 <div class="card card__data__other">
-                                                    <img src="./images/icons_2/Virus.svg" alt="" class="img__other">
-                                                    <p class="title__other">Visitor Management System</p>
+                                                    <img src="./images/icons_2/Virus.svg" alt="" class="img__other" />
+                                                    <p class="title__other">
+                                                        Visitor Management System
+                                                    </p>
                                                 </div>
                                             </div>
                                             <div class="col-12 col-sm-4 col-md-4 col-lg-4">
                                                 <div class="card card__data__other">
-                                                    <img src="./images/icons_2/Virus.svg" alt="" class="img__other">
+                                                    <img src="./images/icons_2/Virus.svg" alt="" class="img__other" />
                                                     <p class="title__other">Waqty App</p>
                                                 </div>
                                             </div>
@@ -499,7 +556,7 @@
                             <div class="card card__data__table">
                                 <div class="row">
                                     <div class="col d-flex align-items-center">
-                                        <img src="./images/icons_2/Vehicle.svg" alt="" class="img__vehicle">
+                                        <img src="./images/icons_2/Vehicle.svg" alt="" class="img__vehicle" />
                                         <h5 class="title__vehicle">Today’s Vehicle Movements</h5>
                                     </div>
                                 </div>
@@ -517,21 +574,24 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td data-label="Time" class="number__table">07:08:22 AM
+                                                    <td data-label="Time" class="number__table">
+                                                        07:08:22 AM
                                                     </td>
                                                     <td data-label="Plate Number">ADNOC INC</td>
                                                     <td data-label="Gate">Gate 2</td>
                                                     <td data-label="Movement">Entry</td>
                                                 </tr>
                                                 <tr>
-                                                    <td data-label="Time" class="number__table">07:08:22 AM
+                                                    <td data-label="Time" class="number__table">
+                                                        07:08:22 AM
                                                     </td>
                                                     <td data-label="Plate Number">ADNOC INC</td>
                                                     <td data-label="Gate">Gate 3</td>
                                                     <td data-label="Movement">Entry</td>
                                                 </tr>
                                                 <tr>
-                                                    <td data-label="Time" class="number__table">07:08:22 AM
+                                                    <td data-label="Time" class="number__table">
+                                                        07:08:22 AM
                                                     </td>
                                                     <td data-label="Plate Number">ADNOC INC</td>
                                                     <td data-label="Gate">Gate 4</td>
@@ -551,20 +611,21 @@
         </div>
     </section>
 
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="libraries/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="libraries/jquery/jquery-3.4.1.min.js"></script>
     <!-- <script src="libraries/jquery/popper.min.js"></script> -->
     <script src="libraries/bootstrap/js/bootstrap.min.js"></script>
-    <script src="libraries/jquery/dropify.min.js"></script>
+    <!-- <script src="libraries/jquery/dropify.min.js"></script> -->
+    <script src="libraries/jquery/alpine.min.js"></script>
+
     <script>
-        $("#accordion").on('shown.bs.collapse', function () {
+        $("#accordion").on("shown.bs.collapse", function () {
             var btnCollapse = $(e.relatedTarget);
-            $('.collapse').collapse('hide')
+            $(".collapse").collapse("hide");
         });
-        $('.dropify').dropify();
+        $(".dropify").dropify();
     </script>
 </body>
 
