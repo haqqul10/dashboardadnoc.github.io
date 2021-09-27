@@ -577,6 +577,11 @@ body .container-fluid {
   opacity: 0;
 }
 
+.profile__card .container-fluid .title-content .modal-content .modal-body input[type="date"]::-webkit-calendar-picker-indicator {
+  background: url(../images/icons_2/Calendar.svg) no-repeat;
+  background-position: center;
+}
+
 .profile__card .container-fluid .title-content .modal-content .modal-footer {
   border: none;
   padding-left: 0;
