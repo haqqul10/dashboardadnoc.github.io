@@ -302,13 +302,45 @@ body .container-fluid {
   text-align: center;
 }
 
-.latest__actions .container-fluid .container__latest__actions .latest__actions__left .StepProgress .StepProgress-item .card img {
+.latest__actions .container-fluid .container__latest__actions .latest__actions__left .StepProgress .StepProgress-item .card .col__profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.latest__actions .container-fluid .container__latest__actions .latest__actions__left .StepProgress .StepProgress-item .card .col__profile .img__card__profile {
   margin-bottom: 16px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.latest__actions .container-fluid .container__latest__actions .latest__actions__left .StepProgress .StepProgress-item .card h5 {
+.latest__actions .container-fluid .container__latest__actions .latest__actions__left .StepProgress .StepProgress-item .card .col__profile .data__profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.latest__actions .container-fluid .container__latest__actions .latest__actions__left .StepProgress .StepProgress-item .card .col__profile .data__profile h5 {
   font-weight: 600;
   font-size: 18px;
   line-height: 120%;
@@ -316,7 +348,7 @@ body .container-fluid {
   margin-bottom: 4px;
 }
 
-.latest__actions .container-fluid .container__latest__actions .latest__actions__left .StepProgress .StepProgress-item .card .title__profile {
+.latest__actions .container-fluid .container__latest__actions .latest__actions__left .StepProgress .StepProgress-item .card .col__profile .data__profile .title__profile {
   font-size: 14px;
   line-height: 160%;
   color: #888888;
@@ -325,7 +357,7 @@ body .container-fluid {
   margin-bottom: 10px;
 }
 
-.latest__actions .container-fluid .container__latest__actions .latest__actions__left .StepProgress .StepProgress-item .card .adnoc__onshore {
+.latest__actions .container-fluid .container__latest__actions .latest__actions__left .StepProgress .StepProgress-item .card .col__profile .data__profile .adnoc__onshore {
   font-weight: 500;
   font-size: 14px;
   line-height: 160%;
@@ -367,10 +399,6 @@ body .container-fluid {
   line-height: 160%;
   color: #DB8A10;
   margin: 16px 0;
-}
-
-.latest__actions .container-fluid .container__latest__actions .latest__actions__left .StepProgress .StepProgress-item .card .img__card__profile {
-  float: none;
 }
 
 .latest__actions .container-fluid .container__latest__actions .latest__actions__left .StepProgress .StepProgress-item .card .img__profile__icon {
@@ -578,13 +606,6 @@ body .container-fluid {
   .latest__actions .container-fluid .container__latest__actions .latest__actions__left .StepProgress .StepProgress-item .card {
     text-align: left;
   }
-  .latest__actions .container-fluid .container__latest__actions .latest__actions__left .StepProgress .StepProgress-item .card img {
-    margin-bottom: 0;
-    margin-right: 24px;
-  }
-  .latest__actions .container-fluid .container__latest__actions .latest__actions__left .StepProgress .StepProgress-item .card .img__card__profile {
-    float: left;
-  }
 }
 
 @media (min-width: 992px) {
@@ -593,6 +614,27 @@ body .container-fluid {
   }
   .latest__actions .container-fluid .container__latest__actions .col-lg-4 {
     width: 100%;
+  }
+  .latest__actions .container-fluid .container__latest__actions .latest__actions__left .StepProgress .StepProgress-item .card .col__profile {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .latest__actions .container-fluid .container__latest__actions .latest__actions__left .StepProgress .StepProgress-item .card .col__profile .img__card__profile {
+    margin: 0;
+    margin-right: 24px;
+  }
+  .latest__actions .container-fluid .container__latest__actions .latest__actions__left .StepProgress .StepProgress-item .card .col__profile .data__profile {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 

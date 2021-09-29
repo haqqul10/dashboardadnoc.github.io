@@ -276,37 +276,51 @@ body {
                             margin-top: 19px;
                             text-align: center;
 
-                            img {
-                                // margin-right: 24px;
-                                margin-bottom: 16px;
-                                margin-left: auto;
-                                margin-right: auto;
+                            .col__profile {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+
+                                .img__card__profile {
+                                    margin-bottom: 16px;
+                                    margin-left: auto;
+                                    margin-right: auto;
+                                }
+
+                                .data__profile {
+                                    display: flex;
+                                    justify-content: center;
+                                    flex-direction: column;
+                                    align-items: center;
+
+                                    h5 {
+                                        font-weight: 600;
+                                        font-size: 18px;
+                                        line-height: 120%;
+                                        color: #4A4A4A;
+                                        margin-bottom: 4px;
+                                    }
+
+                                    .title__profile {
+                                        font-size: 14px;
+                                        line-height: 160%;
+                                        color: #888888;
+                                        text-decoration: none;
+                                        font-weight: normal;
+                                        margin-bottom: 10px;
+                                    }
+
+                                    .adnoc__onshore {
+                                        font-weight: 500;
+                                        font-size: 14px;
+                                        line-height: 160%;
+                                        color: #1553A0;
+                                        text-decoration: none;
+                                    }
+                                }
                             }
 
-                            h5 {
-                                font-weight: 600;
-                                font-size: 18px;
-                                line-height: 120%;
-                                color: #4A4A4A;
-                                margin-bottom: 4px;
-                            }
-
-                            .title__profile {
-                                font-size: 14px;
-                                line-height: 160%;
-                                color: #888888;
-                                text-decoration: none;
-                                font-weight: normal;
-                                margin-bottom: 10px;
-                            }
-
-                            .adnoc__onshore {
-                                font-weight: 500;
-                                font-size: 14px;
-                                line-height: 160%;
-                                color: #1553A0;
-                                text-decoration: none;
-                            }
 
                             .under__review {
                                 display: flex;
@@ -332,9 +346,7 @@ body {
                                 margin: 16px 0;
                             }
 
-                            .img__card__profile {
-                                float: none;
-                            }
+
 
                             .img__profile__icon {
                                 margin-right: 8px;
@@ -354,18 +366,6 @@ body {
                         }
 
                     }
-
-
-                    // &::before {
-                    //     display: inline-block;
-                    //     content: '';
-                    //     position: absolute;
-                    //     top: 0;
-                    //     left: 15px;
-                    //     width: 30px;
-                    //     height: 100%;
-                    //     border-left: 2px solid #CCC;
-                    // }
 
                     &-item {
                         position: relative;
@@ -563,15 +563,6 @@ body {
                         .StepProgress-item {
                             .card {
                                 text-align: left;
-
-                                img {
-                                    margin-bottom: 0;
-                                    margin-right: 24px;
-                                }
-
-                                .img__card__profile {
-                                    float: left;
-                                }
                             }
                         }
                     }
@@ -597,6 +588,30 @@ body {
 
                 .col-lg-4 {
                     width: 100%;
+                }
+
+                .latest__actions__left {
+                    .StepProgress {
+                        .StepProgress-item {
+                            .card {
+                                .col__profile {
+                                    flex-direction: row;
+                                    justify-content: flex-start;
+                                    align-items: flex-start;
+
+                                    .img__card__profile {
+                                        // margin-bottom: 0;
+                                        margin: 0;
+                                        margin-right: 24px;
+                                    }
+
+                                    .data__profile {
+                                        align-items: flex-start;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
