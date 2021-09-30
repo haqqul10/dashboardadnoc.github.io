@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.css" />
+
+    <!-- My Css -->
+    <link rel="stylesheet" href="styles/innerpagetable.css">
+
+    <!-- datatables -->
+    <!-- <link rel="stylesheet" href="libraries/jquery/jquery.dataTables.css"> -->
+
+    <!-- step -->
+    <!-- <link rel="stylesheet" href="https://design.swedbankpay.com/v/4.7.0/styles/dg-style.css" /> -->
+
+    <title>Navigation</title>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand dekstop" href="#"><img src="./images/icons/Bwabti.svg" class="" alt=""></a>
+            <a class="navbar-brand mobile" href="#"><img src="./images/icons/Logo_navigation.svg" class="" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="collapse navbar-collapse animation__collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Administration
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Reports
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>Welcome, Safeer Nakkolakkal</p>
+                <img src="./images/icons/Vector.svg" alt="">
+            </div>
+        </div>
+    </nav>
+    <!-- akhir navbar -->
+
+    <!-- reader access -->
+    <section class="reader__access">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col d-flex">
+                    <a href="" class="img__back"><img src="./images/icons_2/Back_icon.svg" alt=""></a>
+                    <h4 class="title__reader__access"><img src="./images/icons_2/lock_table.svg" alt="">Restricted
+                        Reader Access</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- akhir reader access -->
+
+    <!-- search Type -->
+    <section class="search__type">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-lg-7 left__search__type">
+                    <div class="d-flex flex-column">
+                        <label for="dropdown" class="form-label">Permission Type</label>
+                        <div class="dropdown">
+                            <a class="btn btn__all dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                All <img src="./images/icons_2/Arrow_down_table.svg" alt="">
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column request__type">
+                        <label for="card" class="form-label">Request Result</label>
+                        <div class="middle">
+                            <div class="colom__1">
+                                <label class="label">
+                                    <div class="box box_1">
+                                        <input type="radio" name="radio" checked />
+                                        <div class="box_blue">
+                                            <img src="./images/icons_2/Ellipse_blue.svg" alt="" />
+                                            <span>All</span>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="colom__2">
+                                <label class="label">
+                                    <div class="box box_2">
+                                        <input type="radio" name="radio" />
+                                        <div class="box_orange">
+                                            <img src="./images/icons_2/Ellipse_orange.svg" alt="" />
+                                            <span>Pending</span>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="colom__3">
+                                <label class="label">
+                                    <div class="box box_3">
+                                        <input type="radio" name="radio" />
+                                        <div class="box_green">
+                                            <img src="./images/icons_2/Ellipse_green.svg" alt="" />
+                                            <span>Approved</span>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="colom__4">
+                                <label class="label">
+                                    <div class="box box_4">
+                                        <input type="radio" name="radio" />
+                                        <div class="box_red">
+                                            <img src="./images/icons_2/Ellipse_red.svg" alt="" />
+                                            <span>Rejected</span>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="colom__5">
+                                <label class="label">
+                                    <div class="box box_5">
+                                        <input type="radio" name="radio" />
+                                        <div class="box_gray">
+                                            <img src="./images/icons_2/Ellipse_gray.svg" alt="" />
+                                            <span>Returned for Correction</span>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5 right__search__type">
+                    <div class="from__date">
+                        <label for="min" class="form-label">From</label>
+                        <input type="date" class="form-control" placeholder="14/04/2021" id="min" name="min">
+                    </div>
+                    <div class="to__date">
+                        <label for="max" class="form-label">To</label>
+                        <input type="date" class="form-control" placeholder="12/09/2021" id="max" name="max">
+                    </div>
+                    <div class="buttom__search">
+                        <a href="" class="btn btn__search">Search</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- akhir search type -->
+
+    <!-- data table -->
+    <section class="data__table">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <table class="table table-bordered" id="example">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>From</th>
+                                <th>To</th>
+                                <th>Requested on</th>
+                                <th>Updated on</th>
+                                <th>Type</th>
+                                <th>Permission Type</th>
+                                <th>Approver</th>
+                                <th>Limit</th>
+                                <th>Status</th>
+                                <th>Remarks</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="Date">21/2/2021</td>
+                                <td data-label="From">-</td>
+                                <td data-label="To">-</td>
+                                <td data-label="Requested On">12/5/2021</td>
+                                <td data-label="Updated On">12/5/2021</td>
+                                <td data-label="Type">Official</td>
+                                <td data-label="Permission Type">-</td>
+                                <td data-label="Approver">Bader Al Junaid</td>
+                                <td data-label="Limit">Access Request to <span class="jd__camp">JD CAMP</span></td>
+                                <td data-label="Status"><span class="badge bg__approved">Approved</span></td>
+                                <td data-label="Remarks">-</td>
+                                <td data-label="Action"> <a href="" class="btn__delete">Delete</a> </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Date">21/2/2021</td>
+                                <td data-label="From">-</td>
+                                <td data-label="To">-</td>
+                                <td data-label="Requested On">12/5/2021</td>
+                                <td data-label="Updated On">12/5/2021</td>
+                                <td data-label="Type">Official</td>
+                                <td data-label="Permission Type">-</td>
+                                <td data-label="Approver">Bader Al Junaid</td>
+                                <td data-label="Limit">Access Request to <span class="jd__camp">JD CAMP</span></td>
+                                <td data-label="Status"><span class="badge bg__approved">Approved</span></td>
+                                <td data-label="Remarks">-</td>
+                                <td data-label="Action"> <a href="" class="btn__delete">Delete</a> </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Date">21/2/2021</td>
+                                <td data-label="From">-</td>
+                                <td data-label="To">-</td>
+                                <td data-label="Requested On">12/5/2021</td>
+                                <td data-label="Updated On">12/5/2021</td>
+                                <td data-label="Type">Official</td>
+                                <td data-label="Permission Type">-</td>
+                                <td data-label="Approver">Bader Al Junaid</td>
+                                <td data-label="Limit">Access Request to <span class="jd__camp">JD CAMP</span></td>
+                                <td data-label="Status"><span class="badge bg__approved">Approved</span></td>
+                                <td data-label="Remarks">-</td>
+                                <td data-label="Action"> <a href="" class="btn__delete">Delete</a> </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Date">21/2/2021</td>
+                                <td data-label="From">-</td>
+                                <td data-label="To">-</td>
+                                <td data-label="Requested On">12/5/2021</td>
+                                <td data-label="Updated On">12/5/2021</td>
+                                <td data-label="Type">Official</td>
+                                <td data-label="Permission Type">-</td>
+                                <td data-label="Approver">Bader Al Junaid</td>
+                                <td data-label="Limit">Access Request to <span class="jd__camp">JD CAMP</span></td>
+                                <td data-label="Status"><span class="badge bg__approved">Approved</span></td>
+                                <td data-label="Remarks">-</td>
+                                <td data-label="Action"> <a href="" class="btn__delete">Delete</a> </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Date">21/2/2021</td>
+                                <td data-label="From">-</td>
+                                <td data-label="To">-</td>
+                                <td data-label="Requested On">12/5/2021</td>
+                                <td data-label="Updated On">12/5/2021</td>
+                                <td data-label="Type">Official</td>
+                                <td data-label="Permission Type">-</td>
+                                <td data-label="Approver">Bader Al Junaid</td>
+                                <td data-label="Limit">Access Request to <span class="jd__camp">JD CAMP</span></td>
+                                <td data-label="Status"><span class="badge bg__approved">Approved</span></td>
+                                <td data-label="Remarks">-</td>
+                                <td data-label="Action"> <a href="" class="btn__delete">Delete</a> </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Date">21/2/2021</td>
+                                <td data-label="From">-</td>
+                                <td data-label="To">-</td>
+                                <td data-label="Requested On">12/5/2021</td>
+                                <td data-label="Updated On">12/5/2021</td>
+                                <td data-label="Type">Official</td>
+                                <td data-label="Permission Type">-</td>
+                                <td data-label="Approver">Bader Al Junaid</td>
+                                <td data-label="Limit">Access Request to <span class="jd__camp">JD CAMP</span></td>
+                                <td data-label="Status"><span class="badge bg__approved">Approved</span></td>
+                                <td data-label="Remarks">-</td>
+                                <td data-label="Action"> <a href="" class="btn__delete">Delete</a> </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Date">21/2/2021</td>
+                                <td data-label="From">-</td>
+                                <td data-label="To">-</td>
+                                <td data-label="Requested On">12/5/2021</td>
+                                <td data-label="Updated On">12/5/2021</td>
+                                <td data-label="Type">Official</td>
+                                <td data-label="Permission Type">-</td>
+                                <td data-label="Approver">Bader Al Junaid</td>
+                                <td data-label="Limit">Access Request to <span class="jd__camp">JD CAMP</span></td>
+                                <td data-label="Status"><span class="badge bg__approved">Approved</span></td>
+                                <td data-label="Remarks">-</td>
+                                <td data-label="Action"> <a href="" class="btn__delete">Delete</a> </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="right__table">
+                        <div class="line__manager">
+                            <a href="">
+                                <img src="./images/icons_2/Ellipse_red.svg" alt="">
+                                Line Manager Approval Required
+                            </a>
+                        </div>
+                        <div class="access__request">
+                            <a href="">
+                                <img src="./images/icons_2/Ellipse_orange.svg" alt="">
+                                Access Request
+                            </a>
+                        </div>
+                        <div class="short">
+                            <a href="">
+                                Short Steps-out
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- akhir data table -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="libraries/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="libraries/jquery/jquery-3.4.1.min.js"></script>
+    <script src="libraries/jquery/jquery.dataTables.min.js"></script>
+    <script src="./libraries/jquery/dataTables.dateTime.min.js"></script>
+    <script src="./libraries/jquery/moment.min.js"></script>
+    <!-- <script src="libraries/jquery/popper.min.js"></script> -->
+    <!-- <script src="libraries/bootstrap/js/bootstrap.min.js"></script> -->
+
+    <script>
+        var minDate, maxDate;
+
+        // Custom filtering function which will search data in column four between two values
+        $.fn.dataTable.ext.search.push(
+            function (settings, data, dataIndex) {
+                var min = minDate.val();
+                var max = maxDate.val();
+                var date = new Date(data[4]);
+
+                if (
+                    (min === null && max === null) ||
+                    (min === null && date <= max) || (min <= date && max === null) || (min <= date && date <= max)
+                ) {
+                    return true;
+                }
+                return false;
+            });
+        $(document).ready(function () {
+            // Create date inputs 
+            minDate = new DateTime($('#min'), {
+                format: 'YYYY-MM-DD'
+            });
+            maxDate = new DateTime($('#max'), {
+                format: 'YYYY-MM-DD'
+            });
+            // DataTables initialisation
+            var table = $('#example').DataTable({
+                searching: false,
+                paging: true,
+                info: false,
+                bLengthChange: false,
+                lengthMenu: [6, 12, 18, 24, 30, 36, 42],
+
+            });
+
+            // Refilter the table 
+            $('#min, #max').on('change', function () {
+                table.draw();
+            });
+        });
+    </script>
+
+</body>
+
+</html>
