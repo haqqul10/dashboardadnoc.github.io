@@ -1,0 +1,398 @@
+body {
+    background-color: #F9F9F9;
+
+    .container-fluid {
+        max-width: 1360px;
+    }
+}
+
+// navbar menu
+.navbar {
+    height: 68px;
+    background-color: #FFFFFF;
+    border: 1px solid #F9F9F9;
+
+    .container-fluid {
+        flex-wrap: nowrap;
+        justify-content: space-around;
+
+        .navbar-toggler {
+            display: flex;
+            flex-direction: column;
+
+            span {
+                display: block;
+                width: 23px;
+                height: 3px;
+                border-radius: 15px;
+                background-color: #4A4A4A;
+                margin-bottom: 5px;
+            }
+        }
+
+        .navbar-brand.dekstop {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 120%;
+            color: #1553A0;
+        }
+    }
+}
+
+// dropdown
+.dropdown__section {
+    margin-top: 40px;
+
+    .dropdown {
+        .btn__all {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 134px;
+            height: 36px;
+            background: #FFFFFF;
+            border: 1px solid #CACACA;
+            border-radius: 5px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 160%;
+            color: #4A4A4A;
+            // border: none;
+        }
+
+        .dropdown-toggle {
+            background-image: url(../images/icons/drobdown.svg);
+            background-repeat: no-repeat;
+            background-position-y: 50%;
+            background-position-x: 90%;
+
+            &::after {
+                border: none;
+            }
+        }
+
+        .btn__all.this__year {
+            width: 120px;
+        }
+    }
+}
+
+// chart js
+.chart__js {
+    margin-top: 24px;
+
+    .container-fluid {
+
+        // card career reder
+        .card {
+            background: #FFFFFF;
+            border: 1px solid #E9E9E9;
+            border-radius: 5px;
+            padding-top: 16px;
+            text-align: center;
+            padding-bottom: 16px;
+            margin-bottom: 16px;
+
+            h6 {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 160%;
+                text-align: center;
+                color: #4A4A4A;
+                margin-bottom: 25px;
+            }
+        }
+
+        .card.card__project {
+            height: 171px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 54px;
+
+            h6 {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 25px;
+                line-height: 120%;
+                text-align: center;
+                color: #1553A0;
+                margin: 0;
+            }
+
+            p {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 160%;
+                margin: 0;
+                color: #4A4A4A;
+            }
+        }
+
+        .card.card__total__project {
+            height: 171px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 54px;
+
+            h6 {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 25px;
+                line-height: 120%;
+                text-align: center;
+                color: #1553A0;
+                margin: 0;
+            }
+
+            p {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 160%;
+                margin: 0;
+                color: #4A4A4A;
+            }
+        }
+
+        .card.card__audit {
+            background: #FFFFFF;
+            border: 1px solid #E9E9E9;
+            border-radius: 5px;
+            padding: 24px;
+
+            h6 {
+                margin-bottom: 0;
+            }
+
+            a {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 160%;
+                text-decoration: none;
+                color: #4A4A4A;
+                margin-right: 10px;
+
+                img {
+                    margin-right: 4px;
+                }
+            }
+
+            p {
+                font-weight: normal;
+                font-size: 10px;
+                line-height: 160%;
+                color: #4A4A4A;
+                margin: 0;
+
+                span {
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 160%;
+                    color: #1553A0;
+                    padding-right: 11px;
+
+                }
+            }
+        }
+
+        .card.card__security {
+            height: 141px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h5 {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 25px;
+                line-height: 120%;
+                text-align: center;
+                color: #1553A0;
+                margin: 0;
+            }
+
+            .title__security {
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 160%;
+                text-align: center;
+                color: #4A4A4A;
+                margin: 0;
+            }
+
+            .text__security {
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 160%;
+                text-align: center;
+                color: #888888;
+                margin: 0;
+            }
+        }
+
+        .card.card__capex {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 107px;
+
+            h5 {
+                font-weight: normal;
+                font-size: 23px;
+                line-height: 28px;
+                text-align: center;
+                letter-spacing: -0.05em;
+                color: #1553A0;
+                margin: 0;
+            }
+
+            .title__security {
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 15px;
+                text-align: center;
+                color: #485465;
+                margin: 0;
+            }
+
+            .text__security {
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 15px;
+                text-align: center;
+                color: #A6ACB6;
+                margin: 0;
+            }
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {}
+
+// responsive table
+@media screen and (max-width: 768px) {}
+
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+
+@media (max-width: 768px) {}
+
+
+@media (max-width: 992px) {
+
+    // navbar
+    .navbar {
+        .container-fluid {
+            .collapse {
+                .navbar-nav {
+                    .dropdown {
+                        margin-right: 0;
+                    }
+                }
+            }
+
+            .animation__collapse {
+                background-color: white;
+                position: absolute;
+                top: 63px;
+                width: 80%;
+                // padding: 16px 12px;
+                padding-top: 16px;
+                padding-bottom: 16px;
+                padding-left: 12px;
+                padding-right: 0;
+                z-index: 1;
+
+                p {
+                    display: none;
+                }
+
+                img {
+                    display: none;
+                }
+            }
+
+            .dekstop {
+                display: none;
+            }
+
+        }
+    }
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .navbar {
+        .container-fluid {
+            .collapse {
+                .navbar-nav {
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    .dropdown {
+                        margin-right: 22px;
+                    }
+                }
+            }
+
+            .navbar-toggler {
+                display: none;
+            }
+
+            .mobile {
+                display: none;
+            }
+        }
+    }
+
+
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    body {
+        .container-fluid {
+            padding: 0;
+        }
+    }
+
+    .chart__js {
+        .container-fluid {
+            .col-lg-2 {
+                width: 20.666667%;
+            }
+
+            .col-lg-10 {
+                width: 79.333333%;
+            }
+        }
+    }
+}

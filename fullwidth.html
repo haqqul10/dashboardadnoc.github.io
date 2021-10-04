@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.css" />
+
+    <!-- My Css -->
+    <link rel="stylesheet" href="styles/fullwidth.css">
+
+    <!-- datatables -->
+    <!-- <link rel="stylesheet" href="libraries/jquery/jquery.dataTables.css"> -->
+
+    <!-- step -->
+    <!-- <link rel="stylesheet" href="https://design.swedbankpay.com/v/4.7.0/styles/dg-style.css" /> -->
+
+    <title>Full Width</title>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-between">
+                <div class="col d-flex justify-content-start">
+                    <a class="navbar-brand dekstop" href="#">ITD Performance Dashboard - May 2021</a>
+                    <a class="navbar-brand mobile" href="#"><img src="./images/icons/Logo_navigation.svg" class=""
+                            alt=""></a>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-end">
+                <img src="./images/icons/Vector.svg" alt="">
+            </div>
+        </div>
+    </nav>
+    <!-- akhir navbar -->
+
+    <!-- dropdown -->
+    <section class="dropdown__section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col d-flex justify-contant-start">
+                    <div class="dropdown">
+                        <button class="btn btn__all dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            All Divisions
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col d-flex justify-content-end">
+                    <div class="dropdown">
+                        <button class="btn btn__all dropdown-toggle this__year" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            This Year
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- akhir dropdown -->
+
+    <!-- chart js -->
+    <section class="chart__js">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-lg-2">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <h6>Career Ladder</h6>
+                                <div id="career1"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <h6>Career Ladder</h6>
+                                <div id="career2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <h6>Career Ladder</h6>
+                                <div id="career3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card card__project">
+                                <h6>0/6</h6>
+                                <p>L3 PC Projects</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card card__total__project">
+                                <h6>0/44</h6>
+                                <p>Total Project Completed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-10">
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <div class="card card__audit">
+                                <h6>Audit Due 2021</h6>
+                                <div id="audit1"></div>
+                                <div class="row">
+                                    <div class="col">
+                                        <a href=""> <img src="./images/icons_2/open_rounded.svg" alt=""> Open </a>
+                                        <a href=""> <img src="./images/icons_2/close_rounded.svg" alt=""> Close </a>
+                                    </div>
+                                    <div class="col">
+                                        <p> <span>5/13</span> Audit Closed</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="card card__audit">
+                                <h6>Health Check Status</h6>
+                                <div id="audit2"></div>
+                                <div class="row">
+                                    <div class="col">
+                                        <a href=""> <img src="./images/icons_2/open_rounded.svg" alt=""> Open </a>
+                                        <a href=""> <img src="./images/icons_2/close_rounded.svg" alt=""> Close </a>
+                                    </div>
+                                    <div class="col">
+                                        <p> <span>7/25</span> Audit Closed</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="card card__audit">
+                                <h6>Change Status</h6>
+                                <div id="audit3"></div>
+                                <div class="row d-flex align-items-center">
+                                    <div class="col">
+                                        <a href=""> <img src="./images/icons_2/open_rounded.svg" alt=""> Open </a>
+                                        <a href=""> <img src="./images/icons_2/close_rounded.svg" alt=""> Close </a>
+                                    </div>
+                                    <div class="col">
+                                        <p> <span>7/25</span> Audit Closed</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- row 2 -->
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <div class="card card__audit">
+                                <h6>Audit Due 2021</h6>
+                                <div id="identified"></div>
+                                <div class="row">
+                                    <div class="col">
+                                        <a href=""> <img src="./images/icons_2/open_rounded.svg" alt=""> Open </a>
+                                        <a href=""> <img src="./images/icons_2/close_rounded.svg" alt=""> Close </a>
+                                    </div>
+                                    <div class="col">
+                                        <p> <span>5/13</span> Audit Closed</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="card card__audit">
+                                <h6>Health Check Status</h6>
+                                <div id="audit2"></div>
+                                <div class="row">
+                                    <div class="col">
+                                        <a href=""> <img src="./images/icons_2/open_rounded.svg" alt=""> Open </a>
+                                        <a href=""> <img src="./images/icons_2/close_rounded.svg" alt=""> Close </a>
+                                    </div>
+                                    <div class="col">
+                                        <p> <span>7/25</span> Audit Closed</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card card__security">
+                                        <h5>3.47M</h5>
+                                        <p class="title__security">Security Attack Blocked</p>
+                                        <p class="text__security">as of April 2021 YTD</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col pe-0">
+                                    <div class="card card__capex">
+                                        <h5>38%</h5>
+                                        <p class="title__security">EXORD Opex</p>
+                                        <p class="text__security">as of Mar 2021</p>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card card__capex">
+                                        <h5>-52%</h5>
+                                        <p class="title__security">Capex Gate YTD</p>
+                                        <p class="text__security">as of Mar 2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- row 3 -->
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <div class="card card__audit">
+                                <h6>Audit Due 2021</h6>
+                                <div id="identified"></div>
+                                <div class="row">
+                                    <div class="col">
+                                        <a href=""> <img src="./images/icons_2/open_rounded.svg" alt=""> Open </a>
+                                        <a href=""> <img src="./images/icons_2/close_rounded.svg" alt=""> Close </a>
+                                    </div>
+                                    <div class="col">
+                                        <p> <span>5/13</span> Audit Closed</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="card card__audit">
+                                <h6>Health Check Status</h6>
+                                <div id="audit2"></div>
+                                <div class="row">
+                                    <div class="col">
+                                        <a href=""> <img src="./images/icons_2/open_rounded.svg" alt=""> Open </a>
+                                        <a href=""> <img src="./images/icons_2/close_rounded.svg" alt=""> Close </a>
+                                    </div>
+                                    <div class="col">
+                                        <p> <span>7/25</span> Audit Closed</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="card card__audit">
+                                <h6>Audit Due 2021</h6>
+                                <div id="identified"></div>
+                                <div class="row">
+                                    <div class="col">
+                                        <a href=""> <img src="./images/icons_2/open_rounded.svg" alt=""> Open </a>
+                                        <a href=""> <img src="./images/icons_2/close_rounded.svg" alt=""> Close </a>
+                                    </div>
+                                    <div class="col">
+                                        <p> <span>5/13</span> Audit Closed</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- akhir chart js -->
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="libraries/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="libraries/jquery/jquery-3.4.1.min.js"></script>
+    <script src="libraries/jquery/apexcharts.js"></script>
+
+    <script>
+        // donut rounded career1
+        var career1 = new ApexCharts(document.querySelector("#career1"), {
+            series: [30],
+            chart: {
+                type: 'radialBar',
+                offsetY: -20,
+                sparkline: {
+                    enabled: true
+                }
+            },
+            plotOptions: {
+                radialBar: {
+                    startAngle: -90,
+                    endAngle: 90,
+                    track: {
+                        // background: "#F85D5D",
+                        background: "#DBECF8",
+                        strokeWidth: '25%',
+                        margin: 0,
+                    },
+                    hollow: {
+                        fontSize: '22px',
+                        size: '65%',
+                    },
+                    dataLabels: {
+                        name: {
+                            show: true,
+                            offsetY: -8,
+                            color: "#1553A0",
+                            fontSize: "45px",
+                        },
+                        value: {
+                            offsetY: -2,
+                            fontSize: '22px',
+                            show: false
+                        }
+                    }
+                }
+            },
+            grid: {
+                padding: {
+                    top: -20
+                }
+            },
+            fill: {
+                colors: "#F85D5D",
+                opacity: 1,
+            },
+            labels: ['2'],
+            stroke: {
+                lineCap: "round",
+            },
+        });
+        career1.render();
+        var career2 = new ApexCharts(document.querySelector("#career2"), {
+            series: [30],
+            chart: {
+                type: 'radialBar',
+                offsetY: -20,
+                sparkline: {
+                    enabled: true
+                }
+            },
+            plotOptions: {
+                radialBar: {
+                    startAngle: -90,
+                    endAngle: 90,
+                    track: {
+                        // background: "#F85D5D",
+                        background: "#DBECF8",
+                        strokeWidth: '25%',
+                        margin: 0,
+                    },
+                    hollow: {
+                        fontSize: '22px',
+                        size: '65%',
+                    },
+                    dataLabels: {
+                        name: {
+                            show: true,
+                            offsetY: 0,
+                            color: "#1553A0",
+                            fontSize: "45px",
+                        },
+                        value: {
+                            offsetY: -2,
+                            fontSize: '22px',
+                            show: false
+                        }
+                    }
+                }
+            },
+            grid: {
+                padding: {
+                    top: -20
+                }
+            },
+            fill: {
+                colors: "#F85D5D",
+                opacity: 1,
+            },
+            labels: ['2'],
+            stroke: {
+                lineCap: "round",
+            },
+        });
+        career2.render();
+        var career3 = new ApexCharts(document.querySelector("#career3"), {
+            series: [30],
+            chart: {
+                type: 'radialBar',
+                offsetY: -20,
+                sparkline: {
+                    enabled: true
+                }
+            },
+            plotOptions: {
+                radialBar: {
+                    startAngle: -90,
+                    endAngle: 90,
+                    track: {
+                        // background: "#F85D5D",
+                        background: "#DBECF8",
+                        strokeWidth: '25%',
+                        margin: 0,
+                    },
+                    hollow: {
+                        fontSize: '22px',
+                        size: '65%',
+                    },
+                    dataLabels: {
+                        name: {
+                            show: true,
+                            offsetY: 0,
+                            color: "#1553A0",
+                            fontSize: "45px",
+                        },
+                        value: {
+                            offsetY: -2,
+                            fontSize: '22px',
+                            show: false
+                        }
+                    }
+                }
+            },
+            grid: {
+                padding: {
+                    top: -20
+                }
+            },
+            fill: {
+                colors: "#F85D5D",
+                opacity: 1,
+            },
+            labels: ['2'],
+            stroke: {
+                lineCap: "round",
+            },
+        });
+        career3.render();
+
+
+
+        var chart1 = new ApexCharts(document.querySelector("#audit1"), {
+
+            series: [{
+                name: 'Open',
+                data: [10, 10, 5]
+            }, {
+                name: 'Close',
+                data: [2, 2, 2]
+            }],
+            chart: {
+                type: 'bar',
+                height: '155px',
+                stacked: true,
+                toolbar: {
+                    show: false,
+                }
+            },
+            plotOptions: {
+                bar: {
+                    horizontal: true
+                },
+            },
+            stroke: {
+                show: false,
+                width: 1,
+                colors: ['white']
+            },
+            title: {
+                text: undefined,
+            },
+            xaxis: {
+                categories: ['IT Applications', 'IT Planning', 'IT Infrastructure'],
+                labels: {
+                    formatter: function (val) {
+                        return val
+                    }
+                }
+            },
+            yaxis: {
+                // min: 0,
+                labels: {
+                    overflow: 'justify'
+                },
+                title: {
+                    text: undefined
+                },
+            },
+            tooltip: {
+                y: {
+                    formatter: function (val) {
+                        return val
+                    }
+                }
+            },
+            fill: {
+                opacity: 1,
+                colors: ['#76DDFB', '#1553A0']
+            },
+            legend: {
+                show: false,
+            }
+        });
+        chart1.render();
+        var chart2 = new ApexCharts(document.querySelector("#audit2"), {
+
+            series: [{
+                name: 'Open',
+                data: [10, 10, 5]
+            }, {
+                name: 'Close',
+                data: [2, 2, 2]
+            }],
+            chart: {
+                type: 'bar',
+                height: '155px',
+                stacked: true,
+                toolbar: {
+                    show: false,
+                }
+            },
+            plotOptions: {
+                bar: {
+                    horizontal: true
+                },
+            },
+            stroke: {
+                show: false,
+                width: 1,
+                colors: ['white']
+            },
+            title: {
+                text: undefined,
+            },
+            xaxis: {
+                categories: ['IT Applications', 'IT Planning', 'IT Infrastructure'],
+                labels: {
+                    formatter: function (val) {
+                        return val
+                    }
+                }
+            },
+            yaxis: {
+                // min: 0,
+                labels: {
+                    overflow: 'justify'
+                },
+                title: {
+                    text: undefined
+                },
+            },
+            tooltip: {
+                y: {
+                    formatter: function (val) {
+                        return val
+                    }
+                }
+            },
+            fill: {
+                opacity: 1,
+                colors: ['#76DDFB', '#1553A0']
+            },
+            legend: {
+                show: false,
+            }
+        });
+        chart2.render();
+        var chart3 = new ApexCharts(document.querySelector("#audit3"), {
+
+            series: [{
+                name: 'Open',
+                data: [10, 10, 5]
+            }, {
+                name: 'Close',
+                data: [2, 2, 2]
+            }],
+            chart: {
+                type: 'bar',
+                height: '155px',
+                stacked: true,
+                toolbar: {
+                    show: false,
+                }
+            },
+            plotOptions: {
+                bar: {
+                    horizontal: true
+                },
+            },
+            stroke: {
+                show: false,
+                width: 1,
+                colors: ['white']
+            },
+            title: {
+                text: undefined,
+            },
+            xaxis: {
+                categories: ['IT Applications', 'IT Planning', 'IT Infrastructure'],
+                labels: {
+                    formatter: function (val) {
+                        return val
+                    }
+                }
+            },
+            yaxis: {
+                // min: 0,
+                labels: {
+                    overflow: 'justify'
+                },
+                title: {
+                    text: undefined
+                },
+            },
+            tooltip: {
+                y: {
+                    formatter: function (val) {
+                        return val
+                    }
+                }
+            },
+            fill: {
+                opacity: 1,
+                colors: ['#76DDFB', '#1553A0']
+            },
+            legend: {
+                show: false,
+            }
+        });
+        chart3.render();
+        var identified = new ApexCharts(document.querySelector("#identified"), {
+
+            series: [{
+                name: 'Open',
+                data: [10, 10, 5]
+            }, {
+                name: 'Close',
+                data: [2, 2, 0]
+            }, {
+                name: 'Close',
+                data: [0, 0, 2]
+            }],
+            chart: {
+                type: 'bar',
+                height: '155px',
+                stacked: true,
+                toolbar: {
+                    show: false,
+                }
+            },
+            plotOptions: {
+                bar: {
+                    horizontal: true
+                },
+            },
+            stroke: {
+                show: false,
+                width: 1,
+                colors: ['white']
+            },
+            title: {
+                text: undefined,
+            },
+            xaxis: {
+                categories: ['IT Applications', 'IT Planning', 'IT Infrastructure'],
+                labels: {
+                    formatter: function (val) {
+                        return val
+                    }
+                }
+            },
+            yaxis: {
+                // min: 0,
+                labels: {
+                    overflow: 'justify'
+                },
+                title: {
+                    text: undefined
+                },
+            },
+            tooltip: {
+                y: {
+                    formatter: function (val) {
+                        return val
+                    }
+                }
+            },
+            fill: {
+                opacity: 1,
+                colors: ['#5FD7A5', '#F9AC66']
+            },
+            legend: {
+                show: false,
+            }
+        });
+        identified.render();
+    </script>
+
+</body>
+
+</html>
