@@ -178,6 +178,8 @@ body {
                 text-decoration: none;
                 color: #4A4A4A;
                 margin-right: 10px;
+                display: flex;
+                flex-direction: row;
 
                 img {
                     margin-right: 4px;
@@ -392,6 +394,11 @@ body {
 
             .col-lg-10 {
                 width: 79.333333%;
+                padding-left: 15px;
+            }
+
+            .col-lg-4 {
+                padding-left: 0;
             }
         }
     }

@@ -196,6 +196,13 @@ body .container-fluid {
   text-decoration: none;
   color: #4A4A4A;
   margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .chart__js .container-fluid .card.card__audit a img {
@@ -351,6 +358,10 @@ body .container-fluid {
   }
   .chart__js .container-fluid .col-lg-10 {
     width: 79.333333%;
+    padding-left: 15px;
+  }
+  .chart__js .container-fluid .col-lg-4 {
+    padding-left: 0;
   }
 }
 /*# sourceMappingURL=fullwidth.css.map */
