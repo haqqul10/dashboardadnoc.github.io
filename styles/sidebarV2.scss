@@ -153,7 +153,7 @@ body {
             h4 {
                 font-style: normal;
                 font-weight: bold;
-                font-size: 30px;
+                font-size: 25px;
                 line-height: 120%;
                 margin-bottom: 4px;
                 color: #252525;
@@ -347,7 +347,7 @@ body {
 
                     h5 {
                         font-weight: 600;
-                        font-size: 25px;
+                        font-size: 20px;
                         line-height: 120%;
                         color: #4A4A4A;
                         margin: 0;
@@ -674,6 +674,390 @@ body {
                     }
                 }
             }
+
+            // business plan history
+            .business__plan__history {
+                padding: 24px 0px;
+                background: #FFFFFF;
+                border: 1px solid #E9E9E9;
+                border-radius: 5px;
+                margin-top: 20px;
+
+                .title__business__plan {
+                    padding-left: 24px;
+                    padding-right: 24px;
+                    border-bottom: 1px solid #E9E9E9;
+
+                    h5 {
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 120%;
+                        color: #4A4A4A;
+                        margin: 0;
+                    }
+
+                    .navbar__pill {
+                        display: flex;
+                        justify-content: flex-end;
+
+                        .nav {
+                            .nav-item {
+                                position: relative;
+
+                                .nav-link {
+                                    background-color: transparent;
+                                    padding-top: 10px;
+                                    padding-bottom: 10px;
+                                    font-weight: bold;
+                                    font-size: 14px;
+                                    line-height: 160%;
+                                    color: #888888;
+                                    text-align: center;
+                                    padding-right: 10px;
+                                    padding-left: 0;
+
+                                    &.active {
+                                        color: #1553A0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .tab-content {
+                    .tab-pane {
+
+                        // card tab content
+                        .card__tab__content {
+                            padding: 24px;
+
+                            // delivery process
+                            .delivery__process {
+                                h6 {
+                                    font-weight: 600;
+                                    font-size: 20px;
+                                    line-height: 120%;
+                                    margin: 0;
+                                    color: #4A4A4A;
+                                }
+
+                                p {
+                                    font-weight: 500;
+                                    font-size: 16px;
+                                    line-height: 160%;
+                                    margin: 0;
+                                    color: #888888;
+                                }
+
+                                .dropdow__search {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: flex-start;
+                                    margin-top: 6px;
+
+                                    .dropdown {
+                                        margin-top: 8px;
+                                        display: flex;
+                                        flex-direction: row;
+                                        align-items: center;
+
+                                        label {
+                                            font-weight: 500;
+                                            font-size: 14px;
+                                            line-height: 160%;
+                                            color: #888888;
+                                            margin: 0;
+                                            padding-right: 8px;
+                                            padding-left: 0;
+                                        }
+
+                                        .form-control {
+                                            width: 56px;
+
+                                            &::placeholder {
+                                                font-weight: 500;
+                                                font-size: 14px;
+                                                line-height: 160%;
+                                                color: #4A4A4A;
+                                            }
+                                        }
+
+                                        .btn {
+                                            display: flex;
+                                            align-items: center;
+                                            height: 36px;
+                                            background: #FFFFFF;
+                                            border: 1px solid #CACACA;
+                                            border-radius: 5px;
+                                            font-weight: 500;
+                                            font-size: 14px;
+                                            line-height: 160%;
+                                            color: #4A4A4A;
+                                        }
+
+                                        .btn.btn__all__fields {
+                                            width: 121px;
+                                        }
+
+                                        .btn.btn__select__year {
+                                            width: 93px;
+                                        }
+
+                                        .btn.btn__to {
+                                            width: 93px;
+                                        }
+
+                                        .dropdown-toggle {
+                                            background-image: url(../images/icons_2/Arrow_down_table.svg);
+                                            background-repeat: no-repeat;
+                                            background-position-y: 50%;
+                                            background-position-x: 90%;
+
+                                            &::after {
+                                                border: none;
+                                            }
+                                        }
+
+                                    }
+                                }
+                            }
+
+                            // statistics
+                            .statistics {
+                                margin-top: 24px;
+
+                                h6 {
+                                    font-weight: 600;
+                                    font-size: 18px;
+                                    line-height: 120%;
+                                    margin: 0;
+                                    color: #4A4A4A;
+                                }
+
+                                .carousel-control-prev,
+                                .carousel-control-next {
+                                    position: relative;
+                                    display: inline;
+                                    opacity: 1;
+                                    padding: 8px;
+                                    width: 36px;
+                                    height: 36px;
+                                    border: 1px solid #1553A0;
+                                    border-radius: 5px;
+                                    margin-left: 10px;
+
+                                    img {
+                                        vertical-align: top;
+                                    }
+
+                                    span {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                    }
+                                }
+
+                                // chart statistics
+                                .chart__statistics {
+                                    .carousel {
+                                        .carousel-inner {
+                                            .carousel-item {
+                                                .card {
+                                                    padding: 23px;
+                                                    margin-bottom: 16px;
+
+                                                    .title__fields {
+                                                        font-weight: 500;
+                                                        font-size: 14px;
+                                                        line-height: 160%;
+                                                        color: #4A4A4A;
+
+                                                        img {
+                                                            margin-right: 8px;
+                                                        }
+                                                    }
+
+                                                    .rate {
+                                                        p {
+                                                            font-weight: normal;
+                                                            font-size: 12px;
+                                                            line-height: 160%;
+
+                                                            img {
+                                                                margin-right: 8px;
+                                                            }
+                                                        }
+
+                                                        p.green {
+                                                            color: #45956C;
+                                                            padding-bottom: 8px;
+                                                        }
+
+                                                        p.orange {
+                                                            color: #DB8A10;
+                                                            padding-bottom: 8px;
+                                                        }
+
+                                                        p.red {
+                                                            color: #D94C4B;
+                                                            padding-bottom: 8px;
+                                                        }
+
+                                                        p.blue {
+                                                            color: #76DDFB;
+                                                        }
+                                                    }
+
+                                                    #bar__chart__plan {
+                                                        height: 260px;
+                                                        width: 300px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .data__table {
+                                margin-top: 24px;
+                                margin-bottom: 16px;
+
+                                h6 {
+                                    font-weight: 600;
+                                    font-size: 18px;
+                                    line-height: 120%;
+                                    color: #4A4A4A;
+                                }
+
+                                .search__data__tabel {
+                                    display: flex;
+                                    justify-content: flex-start;
+                                    flex-direction: column;
+
+                                    .input-group {
+                                        width: auto;
+                                        height: 36px;
+                                        background: #FFFFFF;
+                                        border-radius: 5px;
+                                        border-color: #CACACA;
+                                        margin-right: 8px;
+                                        margin-bottom: 16px;
+
+                                        .form-control {
+                                            border-left: none;
+                                            padding-left: 0;
+
+                                            &::placeholder {
+                                                font-weight: 500;
+                                                font-size: 14px;
+                                                line-height: 160%;
+                                                color: #CACACA;
+                                            }
+                                        }
+
+                                        .input-group-text {
+                                            background-color: transparent;
+                                            border-right: none;
+                                        }
+                                    }
+
+                                    .add__new__data {
+                                        font-weight: 600;
+                                        font-size: 14px;
+                                        line-height: 160%;
+                                        text-decoration: none;
+                                        color: #FFFFFF;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        width: 151px;
+                                        height: 36px;
+                                        background: #1553A0;
+                                        border-radius: 4px;
+
+                                        img {
+                                            padding-left: 6px;
+                                        }
+                                    }
+                                }
+
+                                .table {
+                                    margin-top: 16px;
+                                    border: 1px solid #E9E9E9;
+                                    border-style: #E9E9E9;
+                                    border-left: none;
+                                    border-right: none;
+
+                                    thead {
+                                        background-color: #F3FBFF;
+
+                                        tr {
+                                            th {
+                                                font-weight: 600;
+                                                font-size: 16px;
+                                                line-height: 160%;
+                                                color: #4A4A4A;
+                                                padding-left: 12px;
+                                                padding-top: 12px;
+                                                padding-bottom: 12px;
+                                            }
+                                        }
+                                    }
+
+                                    tbody {
+                                        tr {
+                                            td {
+                                                font-style: normal;
+                                                font-weight: normal;
+                                                font-size: 14px;
+                                                line-height: 17px;
+                                                color: #4A4A4A;
+                                                padding-top: 13px;
+                                                padding-left: 12px;
+                                                padding-bottom: 13px;
+
+                                                .btn__edit {
+                                                    font-weight: 600;
+                                                    line-height: 140%;
+                                                    color: #1553A0;
+                                                    padding: 7px 19px;
+                                                    text-decoration: none;
+                                                    background: #FFFFFF;
+                                                    border: 1.5px solid #1553A0;
+                                                    border-radius: 5px;
+                                                }
+
+                                            }
+
+                                            td.calculation__name {
+                                                font-weight: 500;
+                                                text-decoration-line: underline;
+                                            }
+                                        }
+                                    }
+
+                                    thead,
+                                    tbody,
+                                    tfoot,
+                                    tr,
+                                    td,
+                                    th {
+                                        border-color: #E9E9E9;
+
+                                    }
+                                }
+
+                            }
+
+
+                        }
+
+
+                    }
+                }
+            }
         }
     }
 }
@@ -692,12 +1076,20 @@ body {
     .content__carousel {
         .container-fluid {
             .container__content__carousel {
+                h4 {
+                    font-size: 30px;
+                }
+
                 .card__ongoin__plan {
                     padding: 24px 0px;
 
                     .title__ongoin__plan {
                         padding-left: 24px;
                         padding-right: 24px;
+
+                        h5 {
+                            font-size: 25px;
+                        }
 
                         .navbar__pill {
                             .nav {
@@ -744,13 +1136,95 @@ body {
                         }
                     }
                 }
+
+                .business__plan__history {
+                    .title__business__plan {
+                        h5 {
+                            font-size: 25px;
+                        }
+
+                        .navbar__pill {
+                            .nav {
+                                .nav-item {
+                                    .nav-link.active::after {
+                                        content: "";
+                                        position: absolute;
+                                        bottom: 0;
+                                        width: 125px;
+                                        height: 3px;
+                                        left: 0px;
+                                        background: #1553A0;
+                                        display: block;
+                                    }
+
+                                    .nav-link {
+                                        padding-top: 0;
+                                        padding-bottom: 0;
+                                        padding-left: 40px;
+                                        padding-right: 40px;
+
+                                        &.active {
+                                            padding-bottom: 18px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
             }
         }
     }
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+
+    // content carousel
+    .content__carousel {
+        .container-fluid {
+            .container__content__carousel {
+                .business__plan__history {
+                    .tab-content {
+                        .tab-pane {
+                            .card__tab__content {
+                                .delivery__process {
+                                    .dropdow__search {
+                                        flex-direction: row;
+                                        justify-content: flex-end;
+                                        margin-top: 0;
+
+                                        .dropdown {
+                                            margin-top: 0;
+
+                                            label {
+                                                padding-left: 17px;
+                                            }
+                                        }
+
+                                    }
+                                }
+
+                                .data__table {
+                                    .search__data__tabel {
+                                        justify-content: flex-end;
+                                        flex-direction: row;
+
+                                        .input-group {
+                                            width: 417px;
+                                            margin-bottom: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
@@ -786,6 +1260,31 @@ body {
                                         .btn__action {
                                             justify-content: center;
                                             margin: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // business plan history
+                .business__plan__history {
+                    .tab-content {
+                        .tab-pane {
+                            .card__tab__content {
+
+                                // statistic
+                                .statistics {
+                                    .chart__statistics {
+                                        .carousel {
+                                            .carousel-inner {
+                                                .carousel-item {
+                                                    .card {
+                                                        margin-bottom: 0;
+                                                    }
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -839,4 +1338,72 @@ body {
     }
 
 
+}
+
+// responsive table
+@media screen and (max-width: 768px) {
+    .content__carousel {
+        .container-fluid {
+            .container__content__carousel {
+                .business__plan__history {
+                    .tab-content {
+                        .tab-pane {
+                            .card__tab__content {
+                                .data__table {
+                                    .table {
+                                        margin-top: 19px;
+                                        // border: 1px solid #CBDAF2;
+                                        border: none;
+
+                                        thead {
+                                            display: none;
+                                        }
+
+                                        tbody {
+                                            display: block;
+                                            width: 100%;
+
+                                            tr {
+                                                // margin-bottom: 24px;
+                                                border-color: #CACACA;
+                                                border-radius: 5px;
+                                                display: block;
+                                                width: 100%;
+                                                margin-bottom: 22px;
+
+                                                td {
+                                                    display: block;
+                                                    width: 100%;
+                                                }
+                                            }
+                                        }
+
+                                        td {
+                                            text-align: right;
+                                            padding-left: 50%;
+                                            position: relative;
+                                            padding-right: 16px;
+
+                                            &::before {
+                                                content: attr(data-label);
+                                                position: absolute;
+                                                left: 0;
+                                                text-align: left;
+                                                width: 50%;
+                                                padding-left: 16px;
+                                                font-size: 15px;
+                                                font-weight: 500;
+                                                color: #888888;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
 }

@@ -117,7 +117,6 @@
                                 <!-- akhir carousel -->
                             </div>
                         </div>
-
                         <div class="row">
                             <div class="col">
                                 <div class="card card__ongoin__plan">
@@ -332,23 +331,578 @@
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="business__plan__history">
+                            <div class="title__business__plan">
+                                <div class="row ">
+                                    <div class="col-12 col-md-6">
+                                        <h5>Business Plan History <img src="./images/icons/help.svg" alt=""></h5>
+                                    </div>
+                                    <div class="col-12 col-md-6 navbar__pill">
+                                        <ul class="nav nav-pills" id="myTab">
+                                            <li class="nav-item">
+                                                <a href="#ffmor" class="nav-link active">FFMOR</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#fsopr" class="nav-link">FSOPR</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade show active" id="ffmor">
+                                            <div class="card__tab__content">
+                                                <div class="delivery__process">
+                                                    <div class="row d-flex align-items-center">
+                                                        <div class="col-12 col-lg-4">
+                                                            <h6>Integrated Production Delivery Process</h6>
+                                                            <p>Field Sustainable Oil Production Rate Automation</p>
+                                                        </div>
+                                                        <div class="col-12 col-lg-8 dropdow__search">
+                                                            <div class="dropdown">
+                                                                <label for="allFields">All Fields</label>
+                                                                <a class="btn btn__all__fields dropdown-toggle" href="#"
+                                                                    role="button" id="dropdownMenuLink"
+                                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    All Fields
+                                                                </a>
+
+                                                                <ul class="dropdown-menu"
+                                                                    aria-labelledby="dropdownMenuLink">
+                                                                    <li><a class="dropdown-item" href="#">Action</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="dropdown">
+                                                                <label for="allFields">System Efficiency</label>
+                                                                <input type="text" class="form-control" id="allFields"
+                                                                    placeholder="90%">
+
+                                                                <ul class="dropdown-menu"
+                                                                    aria-labelledby="dropdownMenuLink">
+                                                                    <li><a class="dropdown-item" href="#">Action</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="dropdown">
+                                                                <label for="allFields">Select Year</label>
+                                                                <a class="btn btn__select__year dropdown-toggle"
+                                                                    href="#" role="button" id="dropdownMenuLink"
+                                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    2020
+                                                                </a>
+
+                                                                <ul class="dropdown-menu"
+                                                                    aria-labelledby="dropdownMenuLink">
+                                                                    <li><a class="dropdown-item" href="#">Action</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="dropdown">
+                                                                <label for="allFields">To</label>
+                                                                <a class="btn btn__to dropdown-toggle" href="#"
+                                                                    role="button" id="dropdownMenuLink"
+                                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    2024
+                                                                </a>
+
+                                                                <ul class="dropdown-menu"
+                                                                    aria-labelledby="dropdownMenuLink">
+                                                                    <li><a class="dropdown-item" href="#">Action</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="statistics">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <h6>Statistics</h6>
+                                                        </div>
+                                                        <div class="col d-flex justify-content-end">
+                                                            <button class="carousel-control-prev" type="button"
+                                                                data-bs-target="#myCarousel" data-bs-slide="prev">
+                                                                <span><img src="./images/icons_2/Arrow_Left_sidebar.svg"
+                                                                        alt=""></span>
+                                                                <span class="visually-hidden">Previous</span>
+                                                            </button>
+                                                            <button class="carousel-control-next" type="button"
+                                                                data-bs-target="#myCarousel" data-bs-slide="next">
+                                                                <span><img
+                                                                        src="./images/icons_2/Arrow_Right_sidebar.svg"
+                                                                        alt=""></span>
+                                                                <span class="visually-hidden">Next</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="chart__statistics">
+                                                        <div id="myCarousel" class="carousel slide"
+                                                            data-bs-ride="carousel">
+                                                            <div class="carousel-inner">
+                                                                <div class="carousel-item active">
+                                                                    <div class="row">
+                                                                        <div class="col">
+                                                                            <div class="card">
+                                                                                <p class="title__fields"> <img
+                                                                                        src="./images/icons_2/akar-icons_star_bintang.svg"
+                                                                                        alt=""> Field Technical Rate</p>
+                                                                                <canvas
+                                                                                    id="line__chart__fields"></canvas>
+                                                                                <div class="rate">
+                                                                                    <p class="green"><img
+                                                                                            src="./images/green_tua.svg"
+                                                                                            alt="">Existing well rate
+                                                                                    </p>
+                                                                                    <p class="orange">
+                                                                                        <img src="./images/orange.svg"
+                                                                                            alt="">New well rate
+                                                                                    </p>
+                                                                                    <p class="red">
+                                                                                        <img src="./images/red.svg"
+                                                                                            alt="">Inactive string
+                                                                                    </p>
+                                                                                    <p class="blue">
+                                                                                        <img src="./images/green.svg"
+                                                                                            alt="">Well performance
+                                                                                    </p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <div class="card">
+                                                                                <p class="title__fields"> <img
+                                                                                        src="./images/icons_2/akar-icons_star.svg"
+                                                                                        alt=""> Field Planned Losses</p>
+                                                                                <canvas
+                                                                                    id="bar__chart__fields"></canvas>
+                                                                                <div class="rate">
+                                                                                    <p class="green"><img
+                                                                                            src="./images/green_tua.svg"
+                                                                                            alt="">Production loss due
+                                                                                        to drilling work-over rig
+                                                                                    </p>
+                                                                                    <p class="orange">
+                                                                                        <img src="./images/orange.svg"
+                                                                                            alt="">Loss due to
+                                                                                        facilities minor repairs
+                                                                                    </p>
+                                                                                    <p class="red">
+                                                                                        <img src="./images/red.svg"
+                                                                                            alt="">Loss due to pigging
+                                                                                        plan
+                                                                                    </p>
+                                                                                    <p class="blue">
+                                                                                        <img src="./images/green.svg"
+                                                                                            alt="">Loss due to
+                                                                                        integrated shutdown plan
+                                                                                    </p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <div class="card">
+                                                                                <p class="title__fields"> <img
+                                                                                        src="./images/icons_2/akar-icons_star_planed.svg"
+                                                                                        alt=""> Un-Planned Losses</p>
+                                                                                <canvas id="bar__chart__plan"></canvas>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                                <div class="carousel-item">
+                                                                    <div class="row">
+                                                                        <div class="col">
+                                                                            <div class="card">
+                                                                                oke siap
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <div class="card">
+                                                                                <p>dua</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <div class="card">
+                                                                                <p>tga</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="data__table">
+                                                    <div class="row">
+                                                        <div class="col-md-12 col-lg-2">
+                                                            <h6>Table</h6>
+                                                        </div>
+                                                        <div class="col-md-12 col-lg-10 search__data__tabel">
+                                                            <div class="input-group">
+                                                                <span class="input-group-text" id="basic-addon1"><img
+                                                                        src="./images/icons/search.svg" alt=""></span>
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="Type keyword here"
+                                                                    aria-label="Username"
+                                                                    aria-describedby="basic-addon1">
+                                                            </div>
+                                                            <a href="" class="add__new__data">Add New Data <img
+                                                                    src="./images/icons_2/Add_white.svg" alt=""></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <table class="table table-responsive">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Calculation Name</th>
+                                                                        <th>Fields</th>
+                                                                        <th>Aug</th>
+                                                                        <th>Sep</th>
+                                                                        <th>Oct</th>
+                                                                        <th>Nov</th>
+                                                                        <th>Dec</th>
+                                                                        <th>Action</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td data-label="Calculation Name"
+                                                                            class="calculation__name">Existing Well Rate
+                                                                        </td>
+                                                                        <td data-label="Fields">Dabbiya</td>
+                                                                        <td data-label="Aug">21.090293</td>
+                                                                        <td data-label="Sep">21.090293</td>
+                                                                        <td data-label="Oct">21.090293</td>
+                                                                        <td data-label="Nov">21.090293</td>
+                                                                        <td data-label="Dec">21.090293</td>
+                                                                        <td data-label="Action">
+                                                                            <a href="" class="btn__edit">Edit</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td data-label="Calculation Name"
+                                                                            class="calculation__name">Existing Well Rate
+                                                                        </td>
+                                                                        <td data-label="Fields">Dabbiya</td>
+                                                                        <td data-label="Aug">21.090293</td>
+                                                                        <td data-label="Sep">21.090293</td>
+                                                                        <td data-label="Oct">21.090293</td>
+                                                                        <td data-label="Nov">21.090293</td>
+                                                                        <td data-label="Dec">21.090293</td>
+                                                                        <td data-label="Action">
+                                                                            <a href="" class="btn__edit">Edit</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td data-label="Calculation Name"
+                                                                            class="calculation__name">Existing Well Rate
+                                                                        </td>
+                                                                        <td data-label="Fields">Dabbiya</td>
+                                                                        <td data-label="Aug">21.090293</td>
+                                                                        <td data-label="Sep">21.090293</td>
+                                                                        <td data-label="Oct">21.090293</td>
+                                                                        <td data-label="Nov">21.090293</td>
+                                                                        <td data-label="Dec">21.090293</td>
+                                                                        <td data-label="Action">
+                                                                            <a href="" class="btn__edit">Edit</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td data-label="Calculation Name"
+                                                                            class="calculation__name">Existing Well Rate
+                                                                        </td>
+                                                                        <td data-label="Fields">Dabbiya</td>
+                                                                        <td data-label="Aug">21.090293</td>
+                                                                        <td data-label="Sep">21.090293</td>
+                                                                        <td data-label="Oct">21.090293</td>
+                                                                        <td data-label="Nov">21.090293</td>
+                                                                        <td data-label="Dec">21.090293</td>
+                                                                        <td data-label="Action">
+                                                                            <a href="" class="btn__edit">Edit</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade show" id="fsopr">
+                                            <p>no entry</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
     </section>
     <!-- akhir content carousel -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="libraries/jquery/jquery-3.4.1.min.js"></script>
-    <script src="libraries/jquery/popper.min.js"></script>
-    <script src="libraries/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-    <!-- <script src="libraries/jquery/chart.min.js"></script> -->
+    <script src="libraries/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="libraries/jquery/popper.min.js"></script> -->
+    <!-- <script src="libraries/bootstrap/js/bootstrap.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script> -->
+    <script src="libraries/jquery/chart.min.js"></script>
 
     <script>
         $(document).ready(function () {
             $("#myTab a").click(function (e) {
                 e.preventDefault();
                 $(this).tab("show");
+            });
+        });
+    </script>
+
+    <!-- line chart -->
+    <script>
+        $(function () {
+            //get the line chart canvas
+            var ctx = $("#line__chart__fields");
+
+            //line chart data
+            var data = {
+                labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+                datasets: [{
+                        label: "Existing well rate",
+                        data: [40, 10, 50, 110, 80, 60, 10],
+                        backgroundColor: "#45956C",
+                        borderColor: "#45956C",
+                        fill: false,
+                        lineTension: 0,
+                        radius: 5
+                    },
+                    {
+                        label: "New well rate",
+                        data: [20, 35, 40, 60, 50, 10, 100],
+                        backgroundColor: "#DB8A10",
+                        borderColor: "#DB8A10",
+                        fill: false,
+                        lineTension: 0,
+                        radius: 5
+                    },
+                    {
+                        label: "Inactive string",
+                        data: [150, 50, 120, 150, 90, 100],
+                        backgroundColor: "#D94C4B",
+                        borderColor: "#D94C4B",
+                        fill: false,
+                        lineTension: 0,
+                        radius: 5
+                    },
+                    {
+                        label: "Well performance ",
+                        data: [10, 100, 150, 50, 150, 30, 150],
+                        backgroundColor: "#76DDFB",
+                        borderColor: "#76DDFB",
+                        fill: false,
+                        lineTension: 0,
+                        radius: 5
+                    }
+                ]
+            };
+
+            //options
+            var options = {
+                responsive: true,
+
+                title: {
+                    display: false,
+                    position: "top",
+                    text: "Line Graph",
+                    fontSize: 18,
+                    fontColor: "#111"
+                },
+                legend: {
+                    show: false,
+                    position: "bottom",
+                    labels: {
+                        fontColor: "#333",
+                        fontSize: 16
+                    }
+                },
+                tooltip: {
+                    enabled: false,
+                },
+            };
+
+            //create Chart class object
+            var chart = new Chart(ctx, {
+                type: "line",
+                data: data,
+                options: options
+            });
+        });
+    </script>
+
+    <script>
+        $(function () {
+            //get the line chart canvas
+            var ctx = $("#bar__chart__fields");
+
+            //line chart data
+            var data = {
+                labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+                datasets: [{
+                        label: "Existing well rate",
+                        data: [40, 10, 50, 110, 80, 60, 10],
+                        backgroundColor: "#45956C",
+                        borderColor: "#45956C",
+                        fill: false,
+                        lineTension: 0,
+                        radius: 5
+                    },
+                    {
+                        label: "New well rate",
+                        data: [20, 35, 40, 60, 50, 10, 100],
+                        backgroundColor: "#DB8A10",
+                        borderColor: "#DB8A10",
+                        fill: false,
+                        lineTension: 0,
+                        radius: 5
+                    },
+                    {
+                        label: "Inactive string",
+                        data: [150, 50, 120, 150, 90, 100],
+                        backgroundColor: "#D94C4B",
+                        borderColor: "#D94C4B",
+                        fill: false,
+                        lineTension: 0,
+                        radius: 5
+                    },
+                    {
+                        label: "Well performance ",
+                        data: [10, 100, 150, 50, 150, 30, 150],
+                        backgroundColor: "#76DDFB",
+                        borderColor: "#76DDFB",
+                        fill: false,
+                        lineTension: 0,
+                        radius: 5
+                    }
+                ]
+            };
+
+            //options
+            var options = {
+                responsive: true,
+
+                title: {
+                    display: false,
+                    position: "top",
+                    text: "Line Graph",
+                    fontSize: 18,
+                    fontColor: "#111"
+                },
+                legend: {
+                    show: false,
+                    position: "bottom",
+                    labels: {
+                        fontColor: "#333",
+                        fontSize: 16
+                    }
+                },
+                tooltip: {
+                    enabled: false,
+                },
+            };
+
+            //create Chart class object
+            var chart = new Chart(ctx, {
+                type: "bar",
+                data: data,
+                options: options
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            //get the line chart canvas
+            var ctx = $("#bar__chart__plan");
+
+            //line chart data
+            var data = {
+                labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+                datasets: [{
+                        label: "Existing well rate",
+                        data: [40, 10, 50, 110, 80, 60, 10],
+                        backgroundColor: "#45956C",
+                        borderColor: "#45956C",
+                        fill: false,
+                        lineTension: 0,
+                        radius: 5
+                    },
+                    {
+                        label: "New well rate",
+                        data: [20, 35, 40, 60, 50, 10, 100],
+                        backgroundColor: "#DB8A10",
+                        borderColor: "#DB8A10",
+                        fill: false,
+                        lineTension: 0,
+                        radius: 5
+                    },
+                    {
+                        label: "Inactive string",
+                        data: [150, 50, 120, 150, 90, 100],
+                        backgroundColor: "#D94C4B",
+                        borderColor: "#D94C4B",
+                        fill: false,
+                        lineTension: 0,
+                        radius: 5
+                    },
+                    {
+                        label: "Well performance ",
+                        data: [10, 100, 150, 50, 150, 30, 150],
+                        backgroundColor: "#76DDFB",
+                        borderColor: "#76DDFB",
+                        fill: false,
+                        lineTension: 0,
+                        radius: 5
+                    }
+                ]
+            };
+
+            //options
+            var options = {
+                responsive: true,
+
+                title: {
+                    display: false,
+                    position: "top",
+                    text: "Line Graph",
+                    fontSize: 18,
+                    fontColor: "#111"
+                },
+                legend: {
+                    show: false,
+                    position: "bottom",
+                    labels: {
+                        fontColor: "#333",
+                        fontSize: 16
+                    }
+                },
+                tooltip: {
+                    enabled: false,
+                },
+            };
+
+            //create Chart class object
+            var chart = new Chart(ctx, {
+                type: "bar",
+                data: data,
+                options: options
             });
         });
     </script>
