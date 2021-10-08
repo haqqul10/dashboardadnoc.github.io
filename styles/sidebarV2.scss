@@ -190,9 +190,56 @@ body {
                     background: #1553A0;
                 }
 
-                .carousel-inner {
-                    height: auto;
+                .carousel-inner.header__carousel__inner {
+                    height: 306px;
                     border: none;
+
+                    .carousel-item.backgorund__carousel {
+                        background-image: url(../images/Bg.png);
+                        padding-left: 32px;
+                        padding-top: 28px;
+                        padding-bottom: 70px;
+                        padding-right: 32px;
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+
+                        h5 {
+                            font-weight: 600;
+                            font-size: 32px;
+                            line-height: 118%;
+                            color: #FFFFFF;
+                            margin-bottom: 16px;
+                        }
+
+                        p {
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 160%;
+                            color: #FFFFFF;
+                            margin-bottom: 16px;
+                        }
+
+                        .btn__get__started {
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 140%;
+                            color: #F9F9F9;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            // padding: 11px 19px;
+                            width: 134px;
+                            height: 42px;
+                            background: #1553A0;
+                            border-radius: 5px;
+                            text-decoration: none;
+                        }
+
+                        .img__carousel {
+                            display: none;
+                        }
+                    }
                 }
             }
 
@@ -677,11 +724,13 @@ body {
 
             // business plan history
             .business__plan__history {
-                padding: 24px 0px;
+                padding-top: 24px;
+                padding-bottom: 0;
                 background: #FFFFFF;
                 border: 1px solid #E9E9E9;
                 border-radius: 5px;
                 margin-top: 20px;
+                margin-bottom: 111px;
 
                 .title__business__plan {
                     padding-left: 24px;
@@ -983,6 +1032,93 @@ body {
                                     }
                                 }
 
+                                .dataTables_wrapper {
+                                    .dataTables_filter {
+                                        display: none;
+                                    }
+
+                                    .dataTables_scroll {
+                                        .dataTables_scrollHead {
+                                            .dataTables_scrollHeadInner {
+                                                .dataTable {
+                                                    margin-bottom: 0;
+                                                }
+                                            }
+                                        }
+
+                                        .dataTables_scrollBody {
+                                            .dataTable {
+                                                margin-top: 0;
+                                                border: none;
+                                            }
+                                        }
+                                    }
+
+                                    .dataTables_info {
+                                        float: left;
+                                        margin-top: 16px;
+                                    }
+
+                                    .dataTables_paginate {
+                                        float: right;
+                                        margin-top: 16px;
+
+                                        .paginate_button {
+                                            padding: 11px 19px;
+                                            background: #FFFFFF;
+                                            border: 1.5px solid #CACACA;
+                                            border-radius: 5px;
+                                            font-style: normal;
+                                            font-weight: 600;
+                                            font-size: 14px;
+                                            line-height: 140%;
+                                            text-decoration: none;
+                                            margin-left: 8px;
+                                            color: black;
+                                        }
+
+                                        .paginate_button.current {
+                                            background: #1553A0;
+                                            border: 1.5px solid #1553A0;
+                                            color: white;
+                                        }
+
+                                        .paginate_button.previous {
+                                            border: 1.5px solid #1553A0;
+                                            color: #1553A0;
+                                        }
+
+                                        .paginate_button.previous.disabled {
+                                            color: #CACACA;
+                                            border: 1.5px solid #CACACA;
+                                        }
+
+                                        .paginate_button.next {
+                                            border: 1.5px solid #1553A0;
+                                            color: #1553A0;
+                                        }
+
+                                        .paginate_button.next.disabled {
+                                            color: #CACACA;
+                                            border: 1.5px solid #CACACA;
+                                        }
+                                    }
+
+                                    table.dataTable>thead .sorting::before,
+                                    table.dataTable>thead .sorting_asc::before {
+                                        background-image: url(../img/icons/arrow-down-top.svg);
+                                        /* background-size: 24px; */
+                                        content: "";
+                                        background-position: top;
+                                        background-repeat: no-repeat;
+                                        opacity: 1;
+                                        top: 13px;
+                                    }
+
+
+                                }
+
+
                                 .table {
                                     margin-top: 16px;
                                     border: 1px solid #E9E9E9;
@@ -1185,6 +1321,23 @@ body {
     .content__carousel {
         .container-fluid {
             .container__content__carousel {
+                .carousel {
+                    .carousel-inner.header__carousel__inner {
+                        .carousel-item.backgorund__carousel {
+                            padding-left: 49px;
+                            padding-top: 42px;
+                            padding-bottom: 70px;
+                            padding-right: 0;
+
+                            .img__carousel {
+                                width: 286px;
+                                margin-top: -41px;
+                                display: block;
+                            }
+                        }
+                    }
+                }
+
                 .business__plan__history {
                     .tab-content {
                         .tab-pane {
