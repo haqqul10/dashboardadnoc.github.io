@@ -1045,10 +1045,15 @@ body .container-fluid {
   font-size: 14px;
   line-height: 160%;
   color: #4A4A4A;
+  margin-bottom: 20px;
 }
 
 .content__carousel .container-fluid .container__content__carousel .business__plan__history .tab-content .tab-pane .card__tab__content .statistics .chart__statistics .carousel .carousel-inner .carousel-item .card .title__fields img {
   margin-right: 8px;
+}
+
+.content__carousel .container-fluid .container__content__carousel .business__plan__history .tab-content .tab-pane .card__tab__content .statistics .chart__statistics .carousel .carousel-inner .carousel-item .card .rate {
+  margin-top: 20px;
 }
 
 .content__carousel .container-fluid .container__content__carousel .business__plan__history .tab-content .tab-pane .card__tab__content .statistics .chart__statistics .carousel .carousel-inner .carousel-item .card .rate p {
@@ -1244,17 +1249,6 @@ body .container-fluid {
 .content__carousel .container-fluid .container__content__carousel .business__plan__history .tab-content .tab-pane .card__tab__content .data__table .dataTables_wrapper .dataTables_paginate .paginate_button.next.disabled {
   color: #CACACA;
   border: 1.5px solid #CACACA;
-}
-
-.content__carousel .container-fluid .container__content__carousel .business__plan__history .tab-content .tab-pane .card__tab__content .data__table .dataTables_wrapper table.dataTable > thead .sorting::before,
-.content__carousel .container-fluid .container__content__carousel .business__plan__history .tab-content .tab-pane .card__tab__content .data__table .dataTables_wrapper table.dataTable > thead .sorting_asc::before {
-  background-image: url(../img/icons/arrow-down-top.svg);
-  /* background-size: 24px; */
-  content: "";
-  background-position: top;
-  background-repeat: no-repeat;
-  opacity: 1;
-  top: 13px;
 }
 
 .content__carousel .container-fluid .container__content__carousel .business__plan__history .tab-content .tab-pane .card__tab__content .data__table .table {

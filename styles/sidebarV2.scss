@@ -921,6 +921,7 @@ body {
                                                         font-size: 14px;
                                                         line-height: 160%;
                                                         color: #4A4A4A;
+                                                        margin-bottom: 20px;
 
                                                         img {
                                                             margin-right: 8px;
@@ -928,6 +929,8 @@ body {
                                                     }
 
                                                     .rate {
+                                                        margin-top: 20px;
+
                                                         p {
                                                             font-weight: normal;
                                                             font-size: 12px;
@@ -1103,19 +1106,6 @@ body {
                                             border: 1.5px solid #CACACA;
                                         }
                                     }
-
-                                    table.dataTable>thead .sorting::before,
-                                    table.dataTable>thead .sorting_asc::before {
-                                        background-image: url(../img/icons/arrow-down-top.svg);
-                                        /* background-size: 24px; */
-                                        content: "";
-                                        background-position: top;
-                                        background-repeat: no-repeat;
-                                        opacity: 1;
-                                        top: 13px;
-                                    }
-
-
                                 }
 
 

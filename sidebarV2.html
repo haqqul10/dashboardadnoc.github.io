@@ -547,6 +547,24 @@
                                                                                         src="./images/icons_2/akar-icons_star_planed.svg"
                                                                                         alt=""> Un-Planned Losses</p>
                                                                                 <canvas id="bar__chart__plan"></canvas>
+                                                                                <div class="rate">
+                                                                                    <p class="green"><img
+                                                                                            src="./images/green_tua.svg"
+                                                                                            alt="">Existing well rate
+                                                                                    </p>
+                                                                                    <p class="orange">
+                                                                                        <img src="./images/orange.svg"
+                                                                                            alt="">New well rate
+                                                                                    </p>
+                                                                                    <p class="red">
+                                                                                        <img src="./images/red.svg"
+                                                                                            alt="">Inactive string
+                                                                                    </p>
+                                                                                    <p class="blue">
+                                                                                        <img src="./images/green.svg"
+                                                                                            alt="">Well performance
+                                                                                    </p>
+                                                                                </div>
                                                                             </div>
                                                                         </div>
 
@@ -556,17 +574,86 @@
                                                                     <div class="row">
                                                                         <div class="col">
                                                                             <div class="card">
-                                                                                oke siap
+                                                                                <p class="title__fields"> <img
+                                                                                        src="./images/icons_2/akar-icons_star_integreted.svg"
+                                                                                        alt=""> Integrated</p>
+                                                                                <canvas
+                                                                                    id="line__chart__integrated"></canvas>
+                                                                                <div class="rate">
+                                                                                    <p class="green"><img
+                                                                                            src="./images/green_tua.svg"
+                                                                                            alt="">Existing well
+                                                                                        rate
+                                                                                    </p>
+                                                                                    <p class="orange">
+                                                                                        <img src="./images/orange.svg"
+                                                                                            alt="">New well rate
+                                                                                    </p>
+                                                                                    <p class="red">
+                                                                                        <img src="./images/red.svg"
+                                                                                            alt="">Inactive string
+                                                                                    </p>
+                                                                                    <p class="blue">
+                                                                                        <img src="./images/green.svg"
+                                                                                            alt="">Well performance
+                                                                                    </p>
+                                                                                </div>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col">
                                                                             <div class="card">
-                                                                                <p>dua</p>
+                                                                                <p class="title__fields"> <img
+                                                                                        src="./images/icons_2/akar-icons_star_integreted.svg"
+                                                                                        alt=""> Integrated</p>
+                                                                                <canvas
+                                                                                    id="line__chart__acak1"></canvas>
+                                                                                <div class="rate">
+                                                                                    <p class="green"><img
+                                                                                            src="./images/green_tua.svg"
+                                                                                            alt="">Existing well
+                                                                                        rate
+                                                                                    </p>
+                                                                                    <p class="orange">
+                                                                                        <img src="./images/orange.svg"
+                                                                                            alt="">New well rate
+                                                                                    </p>
+                                                                                    <p class="red">
+                                                                                        <img src="./images/red.svg"
+                                                                                            alt="">Inactive string
+                                                                                    </p>
+                                                                                    <p class="blue">
+                                                                                        <img src="./images/green.svg"
+                                                                                            alt="">Well performance
+                                                                                    </p>
+                                                                                </div>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col">
                                                                             <div class="card">
-                                                                                <p>tga</p>
+                                                                                <p class="title__fields"> <img
+                                                                                        src="./images/icons_2/akar-icons_star_integreted.svg"
+                                                                                        alt=""> Integrated</p>
+                                                                                <canvas
+                                                                                    id="line__chart__acak2"></canvas>
+                                                                                <div class="rate">
+                                                                                    <p class="green"><img
+                                                                                            src="./images/green_tua.svg"
+                                                                                            alt="">Existing well
+                                                                                        rate
+                                                                                    </p>
+                                                                                    <p class="orange">
+                                                                                        <img src="./images/orange.svg"
+                                                                                            alt="">New well rate
+                                                                                    </p>
+                                                                                    <p class="red">
+                                                                                        <img src="./images/red.svg"
+                                                                                            alt="">Inactive string
+                                                                                    </p>
+                                                                                    <p class="blue">
+                                                                                        <img src="./images/green.svg"
+                                                                                            alt="">Well performance
+                                                                                    </p>
+                                                                                </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -826,7 +913,7 @@
         });
     </script>
 
-    <!-- line chart -->
+    <!-- line chart js -->
     <script>
         $(function () {
             //get the line chart canvas
@@ -896,6 +983,11 @@
                 tooltip: {
                     enabled: false,
                 },
+                plugins: {
+                    legend: {
+                        display: false,
+                    }
+                }
             };
 
             //create Chart class object
@@ -906,15 +998,14 @@
             });
         });
     </script>
-
     <script>
         $(function () {
             //get the line chart canvas
-            var ctx = $("#bar__chart__fields");
+            var ctx = $("#line__chart__acak1");
 
             //line chart data
             var data = {
-                labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+                labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
                 datasets: [{
                         label: "Existing well rate",
                         data: [40, 10, 50, 110, 80, 60, 10],
@@ -976,6 +1067,106 @@
                 tooltip: {
                     enabled: false,
                 },
+                plugins: {
+                    legend: {
+                        display: false,
+                    }
+                }
+            };
+
+            //create Chart class object
+            var chart = new Chart(ctx, {
+                type: "line",
+                data: data,
+                options: options
+            });
+        });
+    </script>
+
+    <!-- bar chart js -->
+    <script>
+        $(function () {
+            //get the line chart canvas
+            var ctx = $("#bar__chart__fields");
+
+            //line chart data
+            var data = {
+                labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+                datasets: [{
+                        label: "Existing well rate",
+                        data: [40, 10, 50, 110, 80, 60, 10],
+                        backgroundColor: "#45956C",
+                        borderColor: "#45956C",
+                        fill: false,
+                        lineTension: 0,
+                        radius: 5
+                    },
+                    {
+                        label: "New well rate",
+                        data: [20, 35, 40, 60, 50, 10, 100],
+                        backgroundColor: "#DB8A10",
+                        borderColor: "#DB8A10",
+                        fill: false,
+                        lineTension: 0,
+                        radius: 5
+                    },
+                    {
+                        label: "Inactive string",
+                        data: [150, 50, 120, 150, 90, 100],
+                        backgroundColor: "#D94C4B",
+                        borderColor: "#D94C4B",
+                        fill: false,
+                        lineTension: 0,
+                        radius: 5
+                    },
+                    {
+                        label: "Well performance ",
+                        data: [10, 100, 150, 50, 150, 30, 150],
+                        backgroundColor: "#76DDFB",
+                        borderColor: "#76DDFB",
+                        fill: false,
+                        lineTension: 0,
+                        radius: 5
+                    }
+                ]
+            };
+
+            //options
+            var options = {
+                responsive: true,
+                scales: {
+                    yAxes: [{
+                        display: true,
+                        ticks: {
+                            beginAtZero: false,
+                        }
+                    }]
+                },
+                title: {
+                    display: false,
+                    position: "top",
+                    text: "Line Graph",
+                    fontSize: 18,
+                    fontColor: "#111"
+                },
+                legend: {
+                    show: false,
+                    position: "bottom",
+                    labels: {
+                        fontColor: "#333",
+                        fontSize: 16
+                    }
+                },
+                tooltip: {
+                    enabled: false,
+                },
+
+                plugins: {
+                    legend: {
+                        display: false,
+                    }
+                }
+
             };
 
             //create Chart class object
@@ -1055,6 +1246,11 @@
                 tooltip: {
                     enabled: false,
                 },
+                plugins: {
+                    legend: {
+                        display: false,
+                    }
+                }
             };
 
             //create Chart class object
@@ -1065,6 +1261,176 @@
             });
         });
     </script>
+    <script>
+        $(function () {
+            //get the line chart canvas
+            var ctx = $("#line__chart__integrated");
+
+            //line chart data
+            var data = {
+                labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+                datasets: [{
+                        label: "Existing well rate",
+                        data: [40, 10, 50, 110, 80, 60, 10],
+                        backgroundColor: "#45956C",
+                        borderColor: "#45956C",
+                        fill: false,
+                        lineTension: 0,
+                        radius: 5
+                    },
+                    {
+                        label: "New well rate",
+                        data: [20, 35, 40, 60, 50, 10, 100],
+                        backgroundColor: "#DB8A10",
+                        borderColor: "#DB8A10",
+                        fill: false,
+                        lineTension: 0,
+                        radius: 5
+                    },
+                    {
+                        label: "Inactive string",
+                        data: [150, 50, 120, 150, 90, 100],
+                        backgroundColor: "#D94C4B",
+                        borderColor: "#D94C4B",
+                        fill: false,
+                        lineTension: 0,
+                        radius: 5
+                    },
+                    {
+                        label: "Well performance ",
+                        data: [10, 100, 150, 50, 150, 30, 150],
+                        backgroundColor: "#76DDFB",
+                        borderColor: "#76DDFB",
+                        fill: false,
+                        lineTension: 0,
+                        radius: 5
+                    }
+                ]
+            };
+
+            //options
+            var options = {
+                responsive: true,
+
+                title: {
+                    display: false,
+                    position: "top",
+                    text: "Line Graph",
+                    fontSize: 18,
+                    fontColor: "#111"
+                },
+                legend: {
+                    show: false,
+                    position: "bottom",
+                    labels: {
+                        fontColor: "#333",
+                        fontSize: 16
+                    }
+                },
+                tooltip: {
+                    enabled: false,
+                },
+                plugins: {
+                    legend: {
+                        display: false,
+                    }
+                }
+            };
+
+            //create Chart class object
+            var chart = new Chart(ctx, {
+                type: "bar",
+                data: data,
+                options: options
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            //get the line chart canvas
+            var ctx = $("#line__chart__acak2");
+
+            //line chart data
+            var data = {
+                labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
+                datasets: [{
+                        label: "Existing well rate",
+                        data: [40, 10, 50, 110, 80, 60, 10],
+                        backgroundColor: "#45956C",
+                        borderColor: "#45956C",
+                        fill: false,
+                        lineTension: 0,
+                        radius: 5
+                    },
+                    {
+                        label: "New well rate",
+                        data: [20, 35, 40, 60, 50, 10, 100],
+                        backgroundColor: "#DB8A10",
+                        borderColor: "#DB8A10",
+                        fill: false,
+                        lineTension: 0,
+                        radius: 5
+                    },
+                    {
+                        label: "Inactive string",
+                        data: [150, 50, 120, 150, 90, 100],
+                        backgroundColor: "#D94C4B",
+                        borderColor: "#D94C4B",
+                        fill: false,
+                        lineTension: 0,
+                        radius: 5
+                    },
+                    {
+                        label: "Well performance ",
+                        data: [10, 100, 150, 50, 150, 30, 150],
+                        backgroundColor: "#76DDFB",
+                        borderColor: "#76DDFB",
+                        fill: false,
+                        lineTension: 0,
+                        radius: 5
+                    }
+                ]
+            };
+
+            //options
+            var options = {
+                responsive: true,
+
+                title: {
+                    display: false,
+                    position: "top",
+                    text: "Line Graph",
+                    fontSize: 18,
+                    fontColor: "#111"
+                },
+                legend: {
+                    show: false,
+                    position: "bottom",
+                    labels: {
+                        fontColor: "#333",
+                        fontSize: 16
+                    }
+                },
+                tooltip: {
+                    enabled: false,
+                },
+                plugins: {
+                    legend: {
+                        display: false,
+                    }
+                }
+            };
+
+            //create Chart class object
+            var chart = new Chart(ctx, {
+                type: "bar",
+                data: data,
+                options: options
+            });
+        });
+    </script>
+
+
 
 </body>
 
