@@ -319,6 +319,7 @@ body .container-fluid {
   background: #FFFFFF;
   border: 1px solid #CACACA;
   border-radius: 5px;
+  font-size: 14px;
 }
 
 .search__type .container-fluid .right__search__type .form-control::-webkit-input-placeholder {
